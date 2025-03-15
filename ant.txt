@@ -1,7 +1,0 @@
-Site com funções e referências sobre html
-> w3 schools
-https://www.w3schools.com/html/default.asp
-
-Remoção de fundo gratuito
-> Remove bg
-https://www.remove.bg/pt-br/uploads
