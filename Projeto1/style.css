@@ -1,12 +1,54 @@
 header{
-    background-color: hsl(245, 96%, 9%);
+    background-image: url(img/fundo-de-onda-de-particula-gradiente_23-2150521671.avif);
 }
-nav{
-    background-color: hsla(245, 96%, 9%);
+header img{
+    width: 300px;
+    height: auto;
+    margin: 10px;
 }
-section{
-    background-color: rgba(12, 55, 154, 0.605);
+/*header nav{
+    background-color: hsla(245, 63%, 16%, 0.647);
+}*/
+header nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+body{
+    /*background-image: url(img/rede_bottom.jpg);*/
+    background-image: url(img/zoom-de-velocidade-de-tubulacao-de-luz-azul-abstrato-na-tecnologia-de-fundo-preto_1142-9120.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: rgb(21, 102, 195);
 }
 footer{
-    background-color: hsla(245, 96%, 9%);;
+    background-color: hsla(246, 87%, 15%, 0.599);
+    height: 200px;
+}
+#link{
+    color: hsl(230, 87%, 48%);
+    text-decoration: none;
+    font-weight: 900;
+}
+#link_ctt{
+    color: hsl(230, 87%, 48%);
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+#Ftr_ind{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#pesq{
+    color: hsl(246, 82%, 28%);
+}
+.title{
+    color: rgb(7, 152, 192);
+    font-weight: bolder;
+}
+span{
+    font-style: italic;
 }
