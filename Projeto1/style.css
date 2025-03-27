@@ -16,7 +16,8 @@ header nav a{
 }
 body{
     /*background-image: url(img/rede_bottom.jpg);*/
-    background-image: url(img/zoom-de-velocidade-de-tubulacao-de-luz-azul-abstrato-na-tecnologia-de-fundo-preto_1142-9120.avif);
+    background-image: url(img/zoom-de-velocidade-de-tubulacao-de-luz-azul-abstrato-na-tecnologia-de-fundo-preto_1142-9120\ \(2\).avif);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +46,11 @@ footer{
 #pesq{
     color: hsl(246, 82%, 28%);
 }
+#img_centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .title{
     color: rgb(7, 152, 192);
     font-weight: bolder;
@@ -52,3 +58,38 @@ footer{
 span{
     font-style: italic;
 }
+section{
+    margin-left: 20px;
+}
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "img1 text12 text12"
+      "text1 text2 text2"; 
+  }
+  .img1 { grid-area: img1; }
+  .text1 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "img_1 img_2 img_3"
+      "img_4 img_5 img_6"
+      "img_7 img_8 img_9"; 
+    grid-area: text1; 
+  }
+  .img_1 { grid-area: img_1; }
+  .img_2 { grid-area: img_2; }
+  .img_3 { grid-area: img_3; }
+  .img_4 { grid-area: img_4; }
+  .img_5 { grid-area: img_5; }
+  .img_6 { grid-area: img_6; }
+  .img_7 { grid-area: img_7; }
+  .img_8 { grid-area: img_8; }
+  .img_9 { grid-area: img_9; }
+  .text2 { grid-area: text2; }
+  .text12 { grid-area: text12; }
