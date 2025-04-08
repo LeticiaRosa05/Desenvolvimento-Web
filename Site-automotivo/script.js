@@ -22,14 +22,14 @@ function setSlider() {
 }
 
 nextButton.onclick = () => {
-    list.style.setProperty('--calculation', -1);  /* faz com que o item venha na direção contrária, no meu caso, seguindo a direção da seta clicada */
+    list.style.setProperty('--calculation', 1);  /* faz com que o item venha na direção contrária, no meu caso, seguindo a direção da seta clicada */
     active = active + 1 > lastPosition ? 0 : active + 1; /* if-else em JS */
     setSlider();
     items[active].classList.add('active');
 }
 
 prevButton.onclick = () => {
-    list.style.setProperty('--calculation', 1);
+    list.style.setProperty('--calculation', -1);
     active = active - 1 < firstPosition ? lastPosition : active - 1; /* if-else em JS */
     setSlider();
     items[active].classList.add('active');
