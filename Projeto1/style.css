@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*list-style: none;*/ /* tira as bolinhas de item nas listas */
+}
+
 header{
     background-image: url(img/fundo-de-onda-de-particula-gradiente_23-2150521671.avif);
 }
@@ -16,7 +23,7 @@ header nav a{
 }
 body{
     /*background-image: url(img/rede_bottom.jpg);*/
-    background-image: url(img/zoom-de-velocidade-de-tubulacao-de-luz-azul-abstrato-na-tecnologia-de-fundo-preto_1142-9120\ \(2\).avif);
+    background-image: linear-gradient(to bottom right, black 55%, #380fa8);
     
     background-position: center;
     background-repeat: no-repeat;
