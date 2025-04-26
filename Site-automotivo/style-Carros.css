@@ -1,0 +1,54 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2.2fr 0.3fr 2.1fr 0.3fr 2.2fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "txt txt txt"
+      "img img img"
+      "txt txt txt"
+      "img img img"
+      "txt txt txt"
+      "img img img";
+  }
+  
+  .txt1 { grid-area: txt1; }
+  
+  .txt2 { grid-area: txt2; }
+  
+  .txt3 { grid-area: txt3; }
+  
+  .img {
+    grid-area: img1;
+    width: auto;
+    height: 250px;
+}
+  
+  .img2 { grid-area: img2; }
+  
+  .img3 { grid-area: img3; }
+  
+  .txt4 { grid-area: txt4; }
+  
+  .txt5 { grid-area: txt5; }
+  
+  .txt6 { grid-area: txt6; }
+  
+  .img4 { grid-area: img4; }
+  
+  .img5 { grid-area: img5; }
+  
+  .img6 { grid-area: img6; }
+  
+  .txt7 { grid-area: txt7; }
+  
+  .txt8 { grid-area: txt8; }
+  
+  .txt9 { grid-area: txt9; }
+  
+  .img7 { grid-area: img7; }
+  
+  .img8 { grid-area: img8; }
+  
+  .img9 { grid-area: img9; }
+  
