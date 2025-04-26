@@ -9,6 +9,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+body header nav ul {
+
+    & #navH {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    & #navH:hover{
+        color: #beff1b;
+    }
+}
+
 body {
     background-color: #000;
     color: white;
