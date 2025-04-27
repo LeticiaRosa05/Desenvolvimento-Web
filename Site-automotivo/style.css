@@ -37,6 +37,7 @@ header {
     grid-template-columns: 1fr 600px;
     gap: 100px;
     z-index: 2;  /* Coloca o header acima de outros elementos da página */
+    margin-top: 20px;
 
     & img {
         width: 250px;
