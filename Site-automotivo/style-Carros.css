@@ -28,11 +28,6 @@ body {
     overflow: auto;  /* Remove a barra de rolagem da página */
 }
 
-/* se não fizer nenhuma mudança ou n for necessário, apagar */
-.img {
-  overflow: hidden;
-}
-
 header {
     position: fixed;  /* Fixa o header no topo da página, mesmo com o scroll da pág */
     width: 100%;
