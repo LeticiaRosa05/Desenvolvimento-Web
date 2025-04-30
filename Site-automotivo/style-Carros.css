@@ -55,10 +55,6 @@ header {
     }
 }
 
-#P911 {
-  padding: 150px 50px 20px 20px; /* cima, embaixo, dir, esq */
-}
-
 section {
   background-image: radial-gradient(#7f3d9e, #6d00d9);
   height: 100%;
@@ -66,6 +62,7 @@ section {
   padding-bottom: 50px;
 }
 
+/* estilização da página 'Carros' */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -222,7 +219,7 @@ section {
 }
 
 #img7 {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img7;
@@ -234,7 +231,7 @@ display: flex;
 }
 
 #img8 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img8;
@@ -246,7 +243,7 @@ display: flex;
 }
 
 #img9 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img9;
@@ -279,7 +276,7 @@ display: flex;
 }
 
 #img10 {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img10;
@@ -291,7 +288,7 @@ display: flex;
 }
 
 #img11 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img11;
@@ -303,7 +300,7 @@ display: flex;
 }
 
 #img12 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: img12;
@@ -312,4 +309,50 @@ display: flex;
     width: 380px;
     cursor: pointer;
   }
+}
+
+/* A partir daqui é estilização da página da Porsche 911 */
+#P911 {
+  padding: 100px 50px 20px 20px; /* cima, embaixo, dir, esq */
+}
+
+.container-P911 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txtSobre txtSobre P911 dados"
+    "txt txt P911 dados"
+    "txt txt P911 dados"
+    "txt txt P911 dados";
+}
+
+.txtSobre {
+  grid-area: txtSobre;
+}
+
+.P911 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: P911;
+}
+
+.txt {
+  grid-area: txt;
+}
+
+.dados {
+  grid-area: dados;
+}
+
+.h1_P911 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
 }
