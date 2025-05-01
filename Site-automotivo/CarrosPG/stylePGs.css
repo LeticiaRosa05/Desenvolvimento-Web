@@ -119,7 +119,7 @@ section {
   background-attachment: fixed;
 }
 
-.paralax {
+.paralax {  /* usar pra todas as pgs com paralax */
   position: absolute;
   left: 0;
   top: 45%;
@@ -129,12 +129,36 @@ section {
   transform: translateY(85%);
 }
 
-.paralax .h1_P911 {
-  color: white;
-  background-image: radial-gradient(#7f3d9e, #6d00d9);
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  opacity: 50%;
+.paralax {
+
+  & .h1_P911 {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
+  & .h1_MTG {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+}
+
+/* A partir daqui, estilização da pg Mustang GT */
+.MTG_paralax {
+  position: relative;
+  height: 100vh;
+  background-image: url(imgPGs/MustangGT1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
