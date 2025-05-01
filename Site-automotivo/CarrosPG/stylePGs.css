@@ -82,7 +82,7 @@ section {
     opacity: 50%;
   }
 
-  & .h1_MTG {
+  /*& .h1_MTG {
     color: white;
     background-image: radial-gradient(#7f3d9e, #6d00d9);
     padding: 18px;
@@ -90,12 +90,12 @@ section {
     letter-spacing: 5px;
     text-transform: uppercase;
     opacity: 50%;
-  }
+  }*/
 }
 
 /* Estilização da página da Porsche 911 */
 #P911 {
-  padding: 45px 20px; /* cima, embaixo, dir, esq */
+  padding: 50px 20px; /* cima, embaixo, dir, esq */
 }
 
 .container-P911 {
@@ -114,6 +114,7 @@ section {
 }
 
 .txtSobre {
+  text-align: justify;
   grid-area: txtSobre;
 }
 
@@ -125,10 +126,12 @@ section {
 }
 
 .txt {
+  text-align: justify;
   grid-area: txt;
 }
 
 .dados {
+  /*text-align: justify;*/
   grid-area: dados;
 }
 
@@ -143,7 +146,7 @@ section {
 
 .P911_paralax {
   position: relative;
-  height: 50vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
+  height: 58vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
   background-image: url(imgPGs/P911_paralax.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,7 +156,7 @@ section {
 
 
 /* Estilização da pg Mustang GT */
-.MTG_paralax {
+/*.MTG_paralax {
   position: relative;
   height: 100vh;
   background-image: url(imgPGs/MustangGT1.jpg);
@@ -161,4 +164,99 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}*/
+
+#MGT {
+  padding: 50px 20px; /* cima, embaixo, dir, esq */
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 0.9fr 0.8fr 0.9fr 0.8fr;
+  grid-template-rows: 0.5fr 1.2fr 0.5fr auto auto auto;
+  gap: 20px 40px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txt1 txt1 imgMustGT imgMustGT imgMustGT imgMustGT"
+    "txt1 txt1 imgMustGT imgMustGT imgMustGT imgMustGT"
+    "txt1 txt1 imgMustGT imgMustGT imgMustGT imgMustGT"
+    "txt2 txt2 front front back back"
+    "sobre sobre sobre sobre sobre sobre"
+    "txt3 txt3 txt4 txt4 txt5 txt5";
+}
+
+.imgMustGT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: imgMustGT;
+
+  & .side-linhas {
+    width: 1100px;
+  }
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: back;
+
+  & .FB-linhas {
+    width: 480px;
+  }
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: front;
+
+  & .FB-linhas {
+    width: 480px;
+  }
+}
+
+.txt1 {
+  text-align: justify;
+  grid-area: txt1;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.txt2 {
+  text-align: justify;
+  grid-area: txt2;
+}
+
+.sobre {
+  padding-top: 50px;
+  font-size: x-large;
+  text-align: center;
+  grid-area: sobre;
+}
+
+.txt3 {
+  text-align: justify;
+  grid-area: txt3;
+}
+
+.txt4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: justify;
+  grid-area: txt4;
+}
+
+.txt5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: justify;
+  grid-area: txt5;
+}
+
