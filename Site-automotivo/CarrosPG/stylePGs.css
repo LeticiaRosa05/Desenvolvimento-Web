@@ -25,7 +25,6 @@ body {
     background-color: #000;
     color: white;
     font-size: 16px;
-    overflow: auto;  /* Remove a barra de rolagem da página */
 }
 
 header {
@@ -64,10 +63,12 @@ section {
 
 /* A partir daqui é estilização da página da Porsche 911 */
 #P911 {
-  padding: 100px 100px 20px 20px; /* cima, embaixo, dir, esq */
+  padding: 45px 20px; /* cima, embaixo, dir, esq */
 }
 
 .container-P911 {
+  padding-top: 110px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -108,15 +109,32 @@ section {
   color: #fff;
 }
 
-#P911_paralax {
-  background-image: url(img-carros/P911_paralax.jpg);
-}
-
-#P911_paralax {
+.P911_paralax {
   position: relative;
-  width: 100%;
+  height: 100vh;
+  background-image: url(imgPGs/P911_paralax.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.paralax {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  transform: translateY(85%);
+}
+
+.paralax .h1_P911 {
+  color: white;
+  background-image: radial-gradient(#7f3d9e, #6d00d9);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 50%;
 }
