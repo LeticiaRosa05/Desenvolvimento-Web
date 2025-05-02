@@ -213,6 +213,55 @@ section {
 }
 
 
+/* Estilização da página da Bugatti La Voiture Noire */
+#BVN {
+  padding: 50px 20px; /* cima, embaixo, dir, esq */
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txt1 txt1 txt1 fichaT fichaT fichaT"
+    "txt1 txt1 txt1 fichaT fichaT fichaT"
+    "sombra3D sombra3D sombra3D fichaT fichaT fichaT"
+    "sombra3D sombra3D sombra3D txt2 txt2 txt2";
+}
+
+.txt1 {
+  text-align: justify;
+  grid-area: txt1;
+  background-color: aqua;
+}
+
+.sombra3D {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: sombra3D;
+  background-color: aqua;
+
+  & .Noire-linhas {
+    width: 900px;
+  }
+}
+
+.fichaT {
+  text-align: justify;
+  grid-area: fichaT;
+  background-color: aqua;
+}
+
+.txt2 {
+  text-align: justify;
+  grid-area: txt2;
+  background-color: aqua;
+}
+
+
+
 /* Estilização da página da Porsche 911 */
 #P911 {
   padding: 50px 20px; /* cima, embaixo, dir, esq */
