@@ -112,7 +112,7 @@ section {
   padding: 50px 20px; /* cima, embaixo, dir, esq */
 }
 
-.container {
+.container-MGT {
   padding-top: 35px;
   display: grid;
   grid-template-columns: 1.3fr 1.3fr 0.9fr 0.8fr 0.9fr 0.8fr;
@@ -230,7 +230,7 @@ section {
   padding-top: 102px;
 }
 
-.container {
+.container-BVN {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr auto auto;
