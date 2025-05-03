@@ -83,6 +83,17 @@ section {
     opacity: 50%;
   }
 
+  /*La Voiture Noire*/
+  & .h1_BVN {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
   /*Porsche*/
   & .h1_P911 {
     color: white;
@@ -215,13 +226,15 @@ section {
 
 /* Estilização da página da Bugatti La Voiture Noire */
 #BVN {
-  padding: 50px 20px; /* cima, embaixo, dir, esq */
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
 }
 
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 20px 20px;
+  grid-template-rows: 1fr 1fr auto auto;
+  gap: 20px 40px;
   grid-auto-flow: row;
   grid-template-areas:
     "txt1 txt1 txt1 fichaT fichaT fichaT"
@@ -233,7 +246,10 @@ section {
 .txt1 {
   text-align: justify;
   grid-area: txt1;
-  background-color: aqua;
+
+  & span {
+    font-weight: bold;
+  }
 }
 
 .sombra3D {
@@ -241,7 +257,6 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: sombra3D;
-  background-color: aqua;
 
   & .Noire-linhas {
     width: 900px;
@@ -251,16 +266,32 @@ section {
 .fichaT {
   text-align: justify;
   grid-area: fichaT;
-  background-color: aqua;
 }
 
 .txt2 {
   text-align: justify;
   grid-area: txt2;
-  background-color: aqua;
 }
 
+.BVN_paralax {
+  padding-top: 90px;
+  position: relative;
+  height: 75vh;
+  background-image: url(imgPGs/LaVoitureNoire.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+.h1_BVN {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
 
 /* Estilização da página da Porsche 911 */
 #P911 {
