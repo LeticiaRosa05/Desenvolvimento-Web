@@ -111,7 +111,7 @@ section {
   align-items: center;
   grid-area: img1;
 
-  & .Mustang {
+  & #Mustang {
     width: 380px;
     cursor: pointer;
   }
@@ -123,7 +123,7 @@ section {
   align-items: center;
   grid-area: img2;
 
-  & .LaVoitureNoire {
+  & #LaVoitureNoire {
     width: 380px;
     cursor: pointer;
   }
@@ -135,7 +135,7 @@ section {
   align-items: center;
   grid-area: img3;
 
-  & .McLaren {
+  & #McLaren {
     width: 380px;
     cursor: pointer;
   }
@@ -168,7 +168,7 @@ section {
   align-items: center;
   grid-area: img4;
 
-  & .CorvetteStingray {
+  & #CorvetteStingray {
     width: 380px;
     cursor: pointer;
   }
@@ -180,7 +180,7 @@ section {
   align-items: center;
   grid-area: img5;
 
-  & .CamaroZL1 {
+  & #CamaroZL1 {
     width: 380px;
     cursor: pointer;
   }
@@ -191,7 +191,7 @@ section {
   align-items: center;
   grid-area: img6;
 
-  & .Huayra {
+  & #Huayra {
     width: 380px;
     cursor: pointer;
   }
@@ -224,7 +224,7 @@ section {
   align-items: center;
   grid-area: img7;
 
-  & .Porsche911 {
+  & #Porsche911 {
     width: 380px;
     cursor: pointer;
   }
@@ -236,7 +236,7 @@ section {
   align-items: center;
   grid-area: img8;
 
-  & .LamboUltimae {
+  & #LamboUltimae {
     width: 380px;
     cursor: pointer;
   }
@@ -248,7 +248,7 @@ section {
   align-items: center;
   grid-area: img9;
 
-  & .ferrariPortofino {
+  & #ferrariPortofino {
     width: 380px;
     cursor: pointer;
   }
