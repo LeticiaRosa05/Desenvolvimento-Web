@@ -135,7 +135,9 @@ section {
   grid-area: imgMustGT;
 
   & .side-linhas {
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
   }
 }
 
@@ -146,7 +148,9 @@ section {
   grid-area: back;
 
   & .FB-linhas {
-    width: 480px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 }
 
@@ -157,7 +161,9 @@ section {
   grid-area: front;
 
   & .FB-linhas {
-    width: 480px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 }
 
@@ -190,15 +196,16 @@ section {
 .txt4 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: justify;
   grid-area: txt4;
 }
 
 .txt5 {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: justify;
   grid-area: txt5;
 }
@@ -231,6 +238,7 @@ section {
 }
 
 .container-BVN {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr auto auto;
@@ -259,7 +267,9 @@ section {
   grid-area: sombra3D;
 
   & .Noire-linhas {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
   }
 }
 
@@ -323,6 +333,12 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: P911;
+
+  .P911-linhas {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
 }
 
 .txt {
