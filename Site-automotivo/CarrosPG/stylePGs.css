@@ -335,21 +335,20 @@ section {
     "P1side P1side P1side P1side txt txt txt"
     "P1side P1side P1side P1side txt txt txt"
     "P1side P1side P1side P1side txt txt txt"
-    "P1back P1back P1back txt1 txt1 txt1 txt1"
-    "P1back P1back P1back txt1 txt1 txt1 txt1"
-    "P1back P1back P1back txt1 txt1 txt1 txt1";
+    "P1back P1back P1back txt1 txt1 txt2 txt2"
+    "P1back P1back P1back txt1 txt1 txt2 txt2"
+    "P1back P1back P1back txt1 txt1 txt2 txt2";
 }
 
 .P1side {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   grid-area: P1side;
-  background-color: aqua;
 
-  & P1-side {
+  & #P1-side {
     width: 100%;
-    max-width: 00px;
+    max-width: 1000px;
     height: auto;
   }
 }
@@ -357,19 +356,17 @@ section {
 .txt {
   grid-area: txt;
   text-align: justify;
-  background-color: aqua;
 }
 
 .P1front {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   grid-area: P1front;
-  background-color: aqua;
 
-  & P1-front {
+  & #P1-front {
     width: 100%;
-    max-width: 00px;
+    max-width: 810px;
     height: auto;
   }
 }
@@ -377,33 +374,42 @@ section {
 .txtIntro {
   grid-area: txtIntro;
   text-align: justify;
-  background-color: aqua;
 }
 
 .P1back {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   grid-area: P1back;
-  background-color: aqua;
 
-  & P1-back {
+  & #P1-back {
     width: 100%;
-    max-width: 00px;
+    max-width: 800px;
     height: auto;
   }
 }
 
 .txt1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   grid-area: txt1;
   text-align: justify;
-  background-color: aqua;
+}
+
+.txt2 {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: txt2;
+  text-align: justify;
 }
 
 .P1_paralax {
   padding-top: 90px;
   position: relative;
-  height: 75vh;
+  height: 72vh;
   background-image: url(imgPGs/McLarenP1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
