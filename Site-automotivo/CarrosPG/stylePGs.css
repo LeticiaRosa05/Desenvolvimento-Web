@@ -104,6 +104,17 @@ section {
     text-transform: uppercase;
     opacity: 50%;
   }
+
+  & .h1_P1 {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
 }
 
 
@@ -302,6 +313,113 @@ section {
   padding-top: 20px;
   color: #fff;
 }
+
+
+/* Estilização da página da McLaren P1 */
+#P1 {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+}
+
+.container-P1 {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr 1.2fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto 1.3fr auto auto;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txtIntro txtIntro txtIntro txtIntro P1front P1front P1front"
+    "txtIntro txtIntro txtIntro txtIntro P1front P1front P1front"
+    "txtIntro txtIntro txtIntro txtIntro P1front P1front P1front"
+    "P1side P1side P1side P1side txt txt txt"
+    "P1side P1side P1side P1side txt txt txt"
+    "P1side P1side P1side P1side txt txt txt"
+    "P1back P1back P1back txt1 txt1 txt1 txt1"
+    "P1back P1back P1back txt1 txt1 txt1 txt1"
+    "P1back P1back P1back txt1 txt1 txt1 txt1";
+}
+
+.P1side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: P1side;
+  background-color: aqua;
+
+  & P1-side {
+    width: 100%;
+    max-width: 00px;
+    height: auto;
+  }
+}
+
+.txt {
+  grid-area: txt;
+  text-align: justify;
+  background-color: aqua;
+}
+
+.P1front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: P1front;
+  background-color: aqua;
+
+  & P1-front {
+    width: 100%;
+    max-width: 00px;
+    height: auto;
+  }
+}
+
+.txtIntro {
+  grid-area: txtIntro;
+  text-align: justify;
+  background-color: aqua;
+}
+
+.P1back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: P1back;
+  background-color: aqua;
+
+  & P1-back {
+    width: 100%;
+    max-width: 00px;
+    height: auto;
+  }
+}
+
+.txt1 {
+  grid-area: txt1;
+  text-align: justify;
+  background-color: aqua;
+}
+
+.P1_paralax {
+  padding-top: 90px;
+  position: relative;
+  height: 75vh;
+  background-image: url(imgPGs/McLarenP1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.h1_P1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
 
 /* Estilização da página da Porsche 911 */
 #P911 {
