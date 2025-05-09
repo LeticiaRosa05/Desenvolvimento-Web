@@ -427,6 +427,91 @@ section {
 }
 
 
+/* Estilização da página do Corvette Stingray */
+#CS {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+}
+
+.container-Corvy {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr 0.9fr 1.3fr 1fr;
+  grid-template-rows: 0.8fr 0.9fr 1fr 1.1fr 1.2fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imgFront imgFront txtInfo1 txtInfo1 dadosT dadosT"
+    "imgFront imgFront txtInfo1 txtInfo1 dadosT dadosT"
+    "imgFront imgFront txtInfo1 txtInfo1 dadosT dadosT"
+    "imgSide imgSide imgSide imgSide dadosT dadosT"
+    "imgSide imgSide imgSide imgSide dadosT dadosT"
+    "txtInfo txtInfo txtInfo txtInfo img3p4 img3p4"
+    "txtInfo txtInfo txtInfo txtInfo img3p4 img3p4";
+}
+
+.imgSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgSide;
+  background-color: aqua;
+
+  & #CorvySide {
+    width: 100%;
+    max-width: 1125px;
+    height: auto;
+  }
+}
+
+.imgFront {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgFront;
+  background-color: aqua;
+
+  & #CorvyF {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+.img3p4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: img3p4;
+  background-color: aqua;
+
+  & #Corvy3p4 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+.dadosT {
+  text-align: justify;
+  grid-area: dadosT;
+  background-color: aqua;
+}
+
+.txtInfo {
+  text-align: justify;
+  grid-area: txtInfo;
+  background-color: aqua;
+}
+
+.txtInfo1 {
+  text-align: justify;
+  grid-area: txtInfo1;
+  background-color: aqua;
+}
+
+
+
 /* Estilização da página da Porsche 911 */
 #P911 {
   padding: 50px 20px; /* cima, embaixo, dir, esq */
