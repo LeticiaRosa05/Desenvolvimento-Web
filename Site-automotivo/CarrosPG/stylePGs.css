@@ -105,7 +105,19 @@ section {
     opacity: 50%;
   }
 
+  /* McLaren P1 */
   & .h1_P1 {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
+    /* Corvette Stingray */
+  & .h1_CS {
     color: white;
     background-image: radial-gradient(#7f3d9e, #6d00d9);
     padding: 18px;
@@ -438,7 +450,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr 0.9fr 1.3fr 1fr;
   grid-template-rows: 0.8fr 0.9fr 1fr 1.1fr 1.2fr 1fr 1fr;
-  gap: 20px 20px;
+  gap: 20px 40px;
   grid-auto-flow: row;
   grid-template-areas:
     "imgFront imgFront txtInfo1 txtInfo1 dadosT dadosT"
@@ -446,30 +458,16 @@ section {
     "imgFront imgFront txtInfo1 txtInfo1 dadosT dadosT"
     "imgSide imgSide imgSide imgSide dadosT dadosT"
     "imgSide imgSide imgSide imgSide dadosT dadosT"
-    "txtInfo txtInfo txtInfo txtInfo img3p4 img3p4"
-    "txtInfo txtInfo txtInfo txtInfo img3p4 img3p4";
-}
-
-.imgSide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: imgSide;
-  background-color: aqua;
-
-  & #CorvySide {
-    width: 100%;
-    max-width: 1125px;
-    height: auto;
-  }
+    "txtInfoA txtInfoA txtInfoB txtInfoB img3p4 img3p4"
+    "txtInfoA txtInfoA txtInfoB txtInfoB img3p4 img3p4";
 }
 
 .imgFront {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 590px;
   grid-area: imgFront;
-  background-color: aqua;
 
   & #CorvyF {
     width: 100%;
@@ -478,12 +476,52 @@ section {
   }
 }
 
+.txtInfo1 {
+  text-align: justify;
+  max-width: 505px;
+  grid-area: txtInfo1;
+}
+
+.imgSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgSide;
+
+  & #CorvySide {
+    width: 100%;
+    max-width: 1125px;
+    height: auto;
+  }
+}
+
+.dadosT {
+  text-align: justify;
+  grid-area: dadosT;
+}
+
+.txtInfoA {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  grid-area: txtInfoA;
+}
+
+.txtInfoB {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  grid-area: txtInfoB;
+}
+
 .img3p4 {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: img3p4;
-  background-color: aqua;
 
   & #Corvy3p4 {
     width: 100%;
@@ -492,24 +530,25 @@ section {
   }
 }
 
-.dadosT {
-  text-align: justify;
-  grid-area: dadosT;
-  background-color: aqua;
+.CS_paralax {
+  padding-top: 90px;
+  position: relative;
+  height: 78vh;
+  background-image: url(imgPGs/CorvyCorreno.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.txtInfo {
-  text-align: justify;
-  grid-area: txtInfo;
-  background-color: aqua;
+.h1_CS {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
 }
-
-.txtInfo1 {
-  text-align: justify;
-  grid-area: txtInfo1;
-  background-color: aqua;
-}
-
 
 
 /* Estilização da página da Porsche 911 */
