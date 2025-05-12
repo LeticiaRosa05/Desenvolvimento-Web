@@ -118,7 +118,8 @@ section {
                     max-width: 400px;
                 }
 
-                & .info {
+                & .info {  /* por algum motivo n ta sendo aplicado */
+                    text-decoration: none; /* experimental, não fundamental */
                     border-radius: 30px;
                     height: 35px;
                     width: 120px;
@@ -127,7 +128,7 @@ section {
                     border: 2px solid #791fd3;
                     background-color: #beff1b;
                     color: #000;
-                    cursor: pointer;
+                    cursor: pointer;  /* revisar pq n ta sendo aplicado */
                     font-family: "League Gothic", sans-serif;
                 }
             }
