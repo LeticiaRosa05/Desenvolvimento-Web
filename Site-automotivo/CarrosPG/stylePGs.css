@@ -946,3 +946,55 @@ section {
   background-attachment: fixed;
 }
 
+
+.container-lambo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "espaco espaco espaco espaco espaco espaco"
+    "LamboFront LamboFront a a b b"
+    "LamboFront LamboFront a a b b"
+    "LamboBack LamboBack a a b b"
+    "LamboBack LamboBack c c c c"
+    "LamboTopSide LamboTopSide c c c c"
+    "LamboTopSide LamboTopSide c c c c";
+}
+
+.espaco {
+  grid-area: espaco;
+  background-color: aqua;
+}
+
+.LamboBack {
+  grid-area: LamboBack;
+  background-color: aqua;
+}
+
+.LamboTopSide {
+  grid-area: LamboTopSide;
+  background-color: aqua;
+}
+
+.a {
+  grid-area: a;
+  background-color: aqua;
+}
+
+.b {
+  grid-area: b;
+  background-color: aqua;
+}
+
+.c {
+  grid-area: c;
+  background-color: aqua;
+}
+
+.LamboFront {
+  grid-area: LamboFront;
+  background-color: aqua;
+}
+
