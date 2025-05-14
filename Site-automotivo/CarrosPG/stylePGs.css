@@ -116,8 +116,19 @@ section {
     opacity: 50%;
   }
 
-    /* Corvette Stingray */
+  /* Corvette Stingray */
   & .h1_CS {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
+  /* Camaro ZL1 */
+  & .h1_ZL1 {
     color: white;
     background-image: radial-gradient(#7f3d9e, #6d00d9);
     padding: 18px;
@@ -542,6 +553,142 @@ section {
 }
 
 .h1_CS {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+
+/* Estilização da página do Camaro ZL1 */
+#ZL1 {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+}
+
+.container-ZL1 {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 1fr 1fr 0.7fr 1.3fr;
+  grid-template-rows: 1fr 1fr 0.7fr 0.7fr auto auto;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txtIntrod txtIntrod txtIntrod imgAbove imgAbove imgAbove"
+    "txtIntrod txtIntrod txtIntrod imgAbove imgAbove imgAbove"
+    "legend1 imgFront imgFront imgBack imgBack legend"
+    "legend1 imgFront imgFront imgBack imgBack legend"
+    "imgSide imgSide imgSide txtFinal txtFinal txtFinal"
+    "imgSide imgSide imgSide txtFinal txtFinal txtFinal"
+    "HfichaTec HfichaTec HfichaTec HfichaTec HfichaTec HfichaTec"
+    "fichaTecA fichaTecA fichaTecA fichaTecB fichaTecB fichaTecB"
+    "fichaTecA fichaTecA fichaTecA fichaTecB fichaTecB fichaTecB";
+}
+ 
+.imgBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgBack;
+
+    & #ZL1back {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+ 
+.imgFront {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgFront;
+
+    & #ZL1front {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+ 
+.imgSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgSide;
+
+    & #ZL1side {
+    width: 100%;
+    max-width: 1125px;
+    height: auto;
+  }
+}
+ 
+.imgAbove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imgAbove;
+
+    & #ZL1above {
+    width: 100%;
+    max-width: 1125px;
+    height: auto;
+  }
+}
+ 
+.txtIntrod {
+  text-align: justify;
+  grid-area: txtIntrod;
+}
+ 
+.txtFinal {
+  text-align: justify;
+  grid-area: txtFinal;
+}
+ 
+.legend {
+  text-align: justify;
+  grid-area: legend;
+}
+ 
+.legend1 {
+  text-align: justify;
+  grid-area: legend1;
+}
+
+.HfichaTec {
+  grid-area: HfichaTec;
+
+  #ftZL1 {
+    text-align: center;
+  }
+}
+
+.fichaTecA {
+  text-align: justify;
+  grid-area: fichaTecA;
+}
+
+.fichaTecB {
+  text-align: justify;
+  grid-area: fichaTecB;
+}
+
+.ZL1_paralax {
+  padding-top: 90px;
+  position: relative;
+  height: 80vh;
+  background-image: url(imgPGs/ZL2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.h1_ZL1 {
   font-size: 50px;
   letter-spacing: 2px;
   font-family: "League Gothic", sans-serif;
