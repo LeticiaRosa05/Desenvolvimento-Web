@@ -94,17 +94,6 @@ section {
     opacity: 50%;
   }
 
-  /*Porsche*/
-  & .h1_P911 {
-    color: white;
-    background-image: radial-gradient(#7f3d9e, #6d00d9);
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    opacity: 50%;
-  }
-
   /* McLaren P1 */
   & .h1_P1 {
     color: white;
@@ -129,6 +118,28 @@ section {
 
   /* Camaro ZL1 */
   & .h1_ZL1 {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
+  /*Porsche*/
+  & .h1_P911 {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
+  /* Lamborghini A. Ultimae */
+  & .h1_LAU {
     color: white;
     background-image: radial-gradient(#7f3d9e, #6d00d9);
     padding: 18px;
@@ -805,3 +816,102 @@ section {
   background-position: center;
   background-attachment: fixed;
 }
+
+
+/* Estilização da página da Lamborghini Aventador Ultimae */
+#LAU {
+  padding: 50px 20px; /* cima, embaixo, dir, esq */
+}
+
+.container-LAU {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1.3fr 0.7fr 0.7fr 0.7fr 1.2fr 1.2fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txtPrimeiro txtPrimeiro txtPrimeiro txtSegundo txtSegundo txtSegundo"
+    "txtPrimeiro txtPrimeiro txtPrimeiro txtSegundo txtSegundo txtSegundo"
+    "txtA imgLambo imgLambo imgLambo imgLambo txtB"
+    "txtA imgLambo imgLambo imgLambo imgLambo txtB"
+    "txtA imgLambo imgLambo imgLambo imgLambo txtB"
+    "dadosTec dadosTec dadosTec1 dadosTec1 outroTxt outroTxt"
+    "dadosTec dadosTec dadosTec1 dadosTec1 outroTxt outroTxt";
+}
+
+.txtPrimeiro {
+  text-align: justify;
+  grid-area: txtPrimeiro;
+  background-color: aqua;
+}
+
+.txtSegundo {
+  text-align: justify;
+  grid-area: txtSegundo;
+  background-color: aqua;
+}
+
+.dadosTec {
+  text-align: justify;
+  grid-area: dadosTec;
+  background-color: aqua;
+}
+
+.dadosTec1 {
+  text-align: justify;
+  grid-area: dadosTec1;
+  background-color: aqua;
+}
+
+.outroTxt {
+  text-align: justify;
+  grid-area: outroTxt;
+  background-color: aqua;
+}
+
+.txtB {
+  text-align: justify;
+  grid-area: txtB;
+  background-color: aqua;
+}
+
+.txtA {
+  text-align: justify;
+  grid-area: txtA;
+  background-color: aqua;
+}
+
+.imgLambo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: imgLambo;
+  background-color: aqua;
+
+  & #LAU-side {
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+  }
+}
+
+.h1_LAU {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.LAU_paralax {
+  position: relative;
+  height: 65vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
+  background-image: url(imgPGs/LamboUltimae.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
