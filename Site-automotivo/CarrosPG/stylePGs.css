@@ -698,6 +698,46 @@ section {
 }
 
 
+/* Estilização da página da Pagani Huayra */
+#PHR {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+}
+
+.container-PHR {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imgPH imgPH imgPH txtHist txtHist"
+    "imgPH imgPH imgPH txtHist txtHist"
+    "imgPH imgPH imgPH txtHist txtHist"
+    "dadosSobre dadosSobre dadosSobre txtTbm txtTbm"
+    "dadosSobre dadosSobre dadosSobre txtTbm txtTbm";
+}
+
+.imgPHR {
+  grid-area: imgPH;
+  background-color: aqua;
+}
+
+.txtHist {
+  grid-area: txtHist;
+  background-color: aqua;
+}
+
+.dadosSobre {
+  grid-area: dadosSobre;
+  background-color: aqua;
+}
+
+.txtTbm {
+  grid-area: txtTbm;
+  background-color: aqua;
+}
+
+
 /* Estilização da página da Porsche 911 */
 #P911 {
   padding: 50px 20px; /* cima, embaixo, dir, esq */
