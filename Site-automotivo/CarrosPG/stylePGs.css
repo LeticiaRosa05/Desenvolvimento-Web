@@ -851,10 +851,11 @@ section {
 
 /* Estilização da página da Lamborghini Aventador Ultimae */
 #LAU {
-  padding: 50px 20px; /* cima, embaixo, dir, esq */
+  padding: 90px 20px; /* cima, embaixo, dir, esq */
 }
 
 .container-LAU {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.2fr 1.3fr 0.7fr 0.7fr 0.7fr 1.2fr 1.2fr;
@@ -938,7 +939,7 @@ section {
 
 .LAU_paralax {
   position: relative;
-  height: 65vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
+  height: 80vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
   background-image: url(imgPGs/LamboUltimae.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -948,6 +949,7 @@ section {
 
 
 .container-lambo {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -969,13 +971,45 @@ section {
 }
 
 .LamboBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: LamboBack;
   background-color: aqua;
+
+  & #LamboB {
+    width: 100%;
+    max-width: 610px;
+    height: auto;
+  }
+}
+
+.LamboFront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: LamboFront;
+  background-color: aqua;
+
+  & #LamboF {
+    width: 100%;
+    max-width: 610px;
+    height: auto;
+  }
 }
 
 .LamboTopSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: LamboTopSide;
   background-color: aqua;
+
+  & #LamboTS {
+    width: 100%;
+    max-width: 590px;
+    height: auto;
+  }
 }
 
 .a {
@@ -990,11 +1024,6 @@ section {
 
 .c {
   grid-area: c;
-  background-color: aqua;
-}
-
-.LamboFront {
-  grid-area: LamboFront;
   background-color: aqua;
 }
 
