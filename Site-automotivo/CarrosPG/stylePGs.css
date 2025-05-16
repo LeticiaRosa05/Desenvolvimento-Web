@@ -738,6 +738,7 @@ section {
 }
 
 .container-PHR {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -752,21 +753,33 @@ section {
 }
 
 .imgPHR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: imgPH;
   background-color: aqua;
+
+  & #Pagani_side {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+  }
 }
 
 .txtHist {
+  text-align: justify;
   grid-area: txtHist;
   background-color: aqua;
 }
 
 .dadosSobre {
+  text-align: justify;
   grid-area: dadosSobre;
   background-color: aqua;
 }
 
 .txtTbm {
+  text-align: justify;
   grid-area: txtTbm;
   background-color: aqua;
 }
@@ -1024,21 +1037,25 @@ section {
 }
 
 .textoIntro {
+  text-align: justify;
   grid-area: textoIntro;
   background-color: aqua;
 }
 
 .DadosT2 {
+  text-align: justify;
   grid-area: DadosT2;
   background-color: aqua;
 }
 
 .DadosT1 {
+  text-align: justify;
   grid-area: DadosT1;
   background-color: aqua;
 }
 
 .textoInfo {
+  text-align: justify;
   grid-area: textoInfo;
   background-color: aqua;
 }
