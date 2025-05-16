@@ -980,8 +980,8 @@ section {
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1.1fr 1.1fr 1.3fr 0.8fr 1fr 0.9fr 1fr 0.8fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1.1fr 0.9fr;
-  gap: 20px 20px;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.43fr 0.43fr;
+  gap: 20px 25px;
   grid-auto-flow: row;
   grid-template-areas:
     "midSide midSide midSide textoIntro textoIntro textoIntro textoIntro textoIntro"
@@ -1043,6 +1043,10 @@ section {
 }
 
 .DadosT2 {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: justify;
   grid-area: DadosT2;
   background-color: aqua;
