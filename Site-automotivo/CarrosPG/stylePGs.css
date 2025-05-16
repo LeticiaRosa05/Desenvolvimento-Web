@@ -160,6 +160,17 @@ section {
     opacity: 50%;
   }
 
+  /*Ferrari Portofino M.*/
+  & .h1_FPM {
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+
 }
 
 
@@ -952,7 +963,9 @@ section {
   padding: 90px 20px; /* cima, embaixo, dir, esq */
 }
 
-.container-FPM {  display: grid;
+.container-FPM {
+  padding-top: 30px;
+  display: grid;
   grid-template-columns: 1.1fr 1.1fr 1.3fr 0.8fr 1fr 0.9fr 1fr 0.8fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1.1fr 0.9fr;
   gap: 20px 20px;
@@ -1030,3 +1043,21 @@ section {
   background-color: aqua;
 }
 
+.h1_FPM {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "League Gothic", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.FPM_paralax {
+  position: relative;
+  height: 80vh;  /* ajusta a partir de que altura da imagem ela vai ser coberta  */
+  background-image: url(imgPGs/Portofino_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
