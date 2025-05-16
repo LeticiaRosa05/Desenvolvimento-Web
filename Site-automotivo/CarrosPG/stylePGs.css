@@ -947,3 +947,86 @@ section {
   background-attachment: fixed;
 }
 
+/* Estilização da página da Ferrari Portofino */
+#FPM {
+  padding: 90px 20px; /* cima, embaixo, dir, esq */
+}
+
+.container-FPM {  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 1.3fr 0.8fr 1fr 0.9fr 1fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1.1fr 0.9fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "midSide midSide midSide textoIntro textoIntro textoIntro textoIntro textoIntro"
+    "midSide midSide midSide textoIntro textoIntro textoIntro textoIntro textoIntro"
+    "textoInfo textoInfo textoInfo textoInfo side side side side"
+    "textoInfo textoInfo textoInfo textoInfo side side side side"
+    "frontF frontF backF backF DadosT1 DadosT1 DadosT2 DadosT2"
+    "frontF frontF backF backF DadosT1 DadosT1 DadosT2 DadosT2";
+}
+
+.midSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: midSide;
+  background-color: aqua;
+
+  & #P-midSide {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: side;
+  background-color: aqua;
+
+  & #P-side {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+}
+
+.frontF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: frontF;
+  background-color: aqua;
+}
+
+.backF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: backF;
+  background-color: aqua;
+}
+
+.textoIntro {
+  grid-area: textoIntro;
+  background-color: aqua;
+}
+
+.DadosT2 {
+  grid-area: DadosT2;
+  background-color: aqua;
+}
+
+.DadosT1 {
+  grid-area: DadosT1;
+  background-color: aqua;
+}
+
+.textoInfo {
+  grid-area: textoInfo;
+  background-color: aqua;
+}
+
