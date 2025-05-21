@@ -1,7 +1,7 @@
 /* Poppins e League Gothic */
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+* { /* aplicado a todos */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body header nav ul {
+body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
 
     & #navH {
         text-decoration: none;
@@ -21,7 +21,7 @@ body header nav ul {
     }
 }
 
-body {
+body { /* aplicado ao body do Home */
     background-color: #000;
     color: white;
     font-size: 16px;
@@ -516,4 +516,271 @@ section {
     width: 380px;
     cursor: pointer;
   }
+}
+
+
+/* Estilização página Fale Conosco */
+#headerFaleConosco {
+  position: relative;
+  width: 100%;
+  left: 50%;  /* Centraliza o header horizontalmente */
+  transform: translateX(-50%);  /* Compensa o deslocamento do header pra ficar exatamente no meio */
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 100px;
+  z-index: 2;  /* Coloca o header acima de outros elementos da página */
+  padding-top: 20px;
+  background: linear-gradient(#7f3d9edf, #6d00d9da);
+  border-bottom: 1px solid #fff;  /* Adiciona uma borda inferior ao header */
+
+  & img {
+    width: 250px;
+    padding-left: 70px;
+  }
+
+  & nav {
+    & ul {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);  /* Cria 3 colunas automaticamente de 200px */
+    }
+  }
+}
+
+#bodyFaleConosco { /* aplicado ao body do Home e do Fale Conosco */
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+}
+
+#sectionFaleConosco {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+  background-image: radial-gradient(#7f3d9e, #6d00d9);
+  height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.containerImgAlugar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr 1.2fr 1.2fr;
+  grid-template-rows: 1fr 0.5fr 1.3fr 1.4fr 1.3fr 0.5fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . ."
+    "pqAlugar pqAlugar imgInterior imgInterior imgInterior . ."
+    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex1 Ex2"
+    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex3 Ex4"
+    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex5 Ex6"
+    "pqAlugar pqAlugar imgInterior imgInterior imgInterior . ."
+    ". . . . . . .";
+}
+
+.imgInterior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: imgInterior;
+  background-color: aqua;
+
+  & #interiorCarro {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+.pqAlugar {
+  text-align: justify;
+  grid-area: pqAlugar;
+  background-color: aqua;
+}
+
+.Ex1 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 5px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon1 ."
+    "mtv1 mtv1 mtv1";
+  grid-area: Ex1;
+  background-color: blue;
+}
+
+.mtv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv1;
+  background-color: aqua;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon1;
+  background-color: aqua;
+}
+
+.Ex2 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 05px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon2 ."
+    "mtv2 mtv2 mtv2";
+  grid-area: Ex2;
+  background-color: blue;
+}
+
+.icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon2;
+  background-color: aqua;
+}
+
+.mtv2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv2;
+  background-color: aqua;
+}
+
+.Ex3 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 05px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon3 ."
+    "mtv3 mtv3 mtv3";
+  grid-area: Ex3;
+  background-color: blue;
+}
+
+.mtv3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv3;
+  background-color: aqua;
+}
+
+.icon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon3;
+  background-color: aqua;
+}
+
+.Ex4 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 05px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon4 ."
+    "mtv4 mtv4 mtv4";
+  grid-area: Ex4;
+  background-color: blue;
+}
+
+.mtv4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv4;
+  background-color: aqua;
+}
+
+.icon4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon4;
+  background-color: aqua;
+}
+
+.Ex5 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 05px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon5 ."
+    "mtv5 mtv5 mtv5";
+  grid-area: Ex5;
+  background-color: blue;
+}
+
+.mtv5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv5;
+  background-color: aqua;
+}
+
+.icon5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon5;
+  background-color: aqua;
+}
+
+.Ex6 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 05px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". icon6 ."
+    "mtv6 mtv6 mtv6";
+  grid-area: Ex6;
+  background-color: blue;
+}
+
+.mtv6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  grid-area: mtv6;
+  background-color: aqua;
+}
+
+.icon6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: icon6;
+  background-color: aqua;
 }
