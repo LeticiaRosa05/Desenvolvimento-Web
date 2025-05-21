@@ -28,7 +28,7 @@ body {
     overflow: hidden;  /* Remove a barra de rolagem da página */
 }
 
-header {
+#headerIndex {
     position: fixed;  /* Fixa o header no topo da página, mesmo com o scroll da pág */
     width: 80vw;
     left: 50%;  /* Centraliza o header horizontalmente */
@@ -280,6 +280,240 @@ section {
                 }
             }
         }
-
     }
+}
+
+
+/* Estilização da página 'Carros' */
+#bodyCarros {
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    overflow: auto;
+}
+
+#headerCarros {
+    position: fixed;  /* Fixa o header no topo da página, mesmo com o scroll da pág */
+    width: 100%;
+    left: 50%;  /* Centraliza o header horizontalmente */
+    transform: translateX(-50%);  /* Compensa o deslocamento do header pra ficar exatamente no meio */
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 100px;
+    z-index: 2;  /* Coloca o header acima de outros elementos da página */
+    padding-top: 20px;
+    background-color: #8600d930;
+    backdrop-filter: blur(10px);  /* Adiciona um efeito de desfoque ao fundo do header */
+    border-bottom: 1px solid #fff;  /* Adiciona uma borda inferior ao header */
+
+    & img {
+        width: 250px;
+        padding-left: 70px;
+    }
+
+    & nav {
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);  /* Cria 3 colunas automaticamente de 200px */
+        }
+    }
+}
+
+#sectionCarros {
+  background-image: radial-gradient(#7f3d9e, #6d00d9);
+  height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.containerCarros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 2.2fr 0.3fr 2.2fr 0.3fr 2.2fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "txt1 txt2 txt3"
+    "img1 img2 img3"
+    "txt4 txt5 txt6"
+    "img4 img5 img6"
+    "txt7 txt8 txt9"
+    "img7 img8 img9"
+    "txt10 txt11 txt12"
+    "img10 img11 img12";
+  width: 80%; /* Define a largura do grid */
+  height: auto; /* Define a altura do grid para encaixar na página */
+  margin: 0 auto; /* Centraliza o grid horizontalmente */
+  padding-top: 150px; /* Adiciona espaço para evitar sobreposição com o header */
+}
+
+#txt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt1;
+}
+
+#txt2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt2;
+}
+
+#txt3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt3;
+}
+
+#img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img1;
+
+  & #Mustang {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img2;
+
+  & #LaVoitureNoire {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img3;
+
+  & #McLaren {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#txt4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt4;
+}
+
+#txt5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt5;
+}
+
+#txt6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt6;
+}
+
+#img4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img4;
+
+  & #CorvetteStingray {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img5;
+
+  & #CamaroZL1 {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img6;
+
+  & #Huayra {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#txt7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt7;
+}
+
+#txt8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt8;
+}
+
+#txt9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: txt9;
+}
+
+#img7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img7;
+
+  & #Porsche911 {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img8;
+
+  & #LamboUltimae {
+    width: 380px;
+    cursor: pointer;
+  }
+}
+
+#img9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img9;
+
+  & #ferrariPortofino {
+    width: 380px;
+    cursor: pointer;
+  }
 }
