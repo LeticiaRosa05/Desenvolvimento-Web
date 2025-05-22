@@ -563,63 +563,43 @@ section {
 
 .containerImgAlugar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr 1.2fr 1.2fr;
-  grid-template-rows: 1fr 0.5fr 1.3fr 1.4fr 1.3fr 0.5fr 1fr;
+  grid-template-columns: 0.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
+  grid-template-rows: 1fr 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr 1fr;
   gap: 20px 20px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". . . . . . ."
-    "pqAlugar pqAlugar imgInterior imgInterior imgInterior . ."
-    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex1 Ex2"
-    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex3 Ex4"
-    "pqAlugar pqAlugar imgInterior imgInterior imgInterior Ex5 Ex6"
-    "pqAlugar pqAlugar imgInterior imgInterior imgInterior . ."
-    ". . . . . . .";
 }
 
 .imgInterior {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: imgInterior;
+  grid-area: 2 / 1 / 7 / 8;
   background-color: aqua;
 
-  & #interiorCarro {
+  & #Int3 {
     width: 100%;
-    max-width: 760px;
+    max-width: 1850px;
     height: auto;
-    border-radius: 20px;
-    cursor: pointer;
   }
 }
 
 .pqAlugar {
   text-align: justify;
-  grid-area: pqAlugar;
-  background-color: aqua;
+  grid-area: 3 / 2 / 6 / 6;
+  background-color: blue;
 }
 
 .Ex1 {
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
-  gap: 5px 0px;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
+  gap: 05px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon1 ."
     ". icon1 ."
     "mtv1 mtv1 mtv1";
-  grid-area: Ex1;
-  background-color: blue;
-}
-
-.mtv1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  grid-area: mtv1;
-  background-color: aqua;
+  grid-area: 3 / 6 / 4 / 7;
 }
 
 .icon1 {
@@ -627,21 +607,26 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon1;
-  background-color: aqua;
+  background-color: slateblue;
+}
+
+#mtv1 {  /* colocar uma fonte diferente */
+  grid-area: mtv1;
+  background-color: cadetblue;
 }
 
 .Ex2 {
+  padding-right: 20px;
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
   gap: 05px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon2 ."
     ". icon2 ."
     "mtv2 mtv2 mtv2";
-  grid-area: Ex2;
-  background-color: blue;
+  grid-area: 3 / 7 / 4 / 8;
 }
 
 .icon2 {
@@ -649,39 +634,25 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon2;
-  background-color: aqua;
+  background-color: slateblue;
 }
 
-.mtv2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
+#mtv2 {
   grid-area: mtv2;
-  background-color: aqua;
+  background-color: cadetblue;
 }
 
 .Ex3 {
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
-  gap: 05px 0px;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
+  gap: 5px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon3 ."
     ". icon3 ."
     "mtv3 mtv3 mtv3";
-  grid-area: Ex3;
-  background-color: blue;
-}
-
-.mtv3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  grid-area: mtv3;
-  background-color: aqua;
+  grid-area: 4 / 6 / 5 / 7;
 }
 
 .icon3 {
@@ -689,30 +660,26 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon3;
-  background-color: aqua;
+  background-color: slateblue;
+}
+
+#mtv3 {
+  grid-area: mtv3;
+  background-color: cadetblue;
 }
 
 .Ex4 {
+  padding-right: 20px;
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
   gap: 05px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon4 ."
     ". icon4 ."
     "mtv4 mtv4 mtv4";
-  grid-area: Ex4;
-  background-color: blue;
-}
-
-.mtv4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  grid-area: mtv4;
-  background-color: aqua;
+  grid-area: 4 / 7 / 5 / 8;
 }
 
 .icon4 {
@@ -720,30 +687,25 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon4;
-  background-color: aqua;
+  background-color: slateblue;
+}
+
+#mtv4 {
+  grid-area: mtv4;
+  background-color: cadetblue;
 }
 
 .Ex5 {
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
   gap: 05px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon5 ."
     ". icon5 ."
     "mtv5 mtv5 mtv5";
-  grid-area: Ex5;
-  background-color: blue;
-}
-
-.mtv5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  grid-area: mtv5;
-  background-color: aqua;
+  grid-area: 5 / 6 / 6 / 7;
 }
 
 .icon5 {
@@ -751,30 +713,26 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon5;
-  background-color: aqua;
+  background-color: slateblue;
+}
+
+#mtv5 {
+  grid-area: mtv5;
+  background-color: cadetblue;
 }
 
 .Ex6 {
+  padding-right: 20px;
   display: grid;
-  grid-template-columns: 0.4fr 2.2fr 0.4fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
+  grid-template-rows: 0.9fr 0.9fr 1.2fr;
   gap: 05px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . ."
+    ". icon6 ."
     ". icon6 ."
     "mtv6 mtv6 mtv6";
-  grid-area: Ex6;
-  background-color: blue;
-}
-
-.mtv6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  grid-area: mtv6;
-  background-color: aqua;
+  grid-area: 5 / 7 / 6 / 8;
 }
 
 .icon6 {
@@ -782,5 +740,23 @@ section {
   justify-content: center;
   align-items: center;
   grid-area: icon6;
-  background-color: aqua;
+  background-color: slateblue;
 }
+
+#mtv6 {
+  grid-area: mtv6;
+  background-color: cadetblue;
+}
+
+  .mtv {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    background-image: radial-gradient(#7f3d9e, #6d00d9);
+    padding: 18px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    opacity: 80%;
+    border-radius: 15px;
+  }
