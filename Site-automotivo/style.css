@@ -21,7 +21,7 @@ body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
     }
 }
 
-body { /* aplicado ao body do Home */
+#bodyIndex { /* aplicado ao body do Home */
     background-color: #000;
     color: white;
     font-size: 16px;
