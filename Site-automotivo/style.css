@@ -583,7 +583,7 @@ section {
   }
 }
 
-.pqAlugar {
+#pqAlugar {
   text-align: justify;
   grid-area: 3 / 2 / 6 / 6;
   background-color: blue;
@@ -757,6 +757,6 @@ section {
     padding: 18px;
     font-size: 12px;
     letter-spacing: 5px;
-    opacity: 80%;
+    opacity: 70%;
     border-radius: 15px;
   }
