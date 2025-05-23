@@ -566,8 +566,8 @@ section {
   min-width: 1100px;
   display: grid;
   grid-template-columns: 0.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
-  grid-template-rows: 1fr 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr 1fr;
-  gap: 20px 20px;
+  grid-template-rows: 1.8fr 1.8fr 1.8fr;
+  gap: 20px 40px;
   grid-auto-flow: row;
 }
 
@@ -575,7 +575,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: 2 / 1 / 7 / 8;
+  grid-area: 1 / 1 / 4 / 8;
   background-color: aqua;
 
   & #Int3 {
@@ -588,12 +588,15 @@ section {
 }
 
 #pqAlugar {
+  margin: 60px 0px;
   text-align: justify;
-  grid-area: 3 / 2 / 6 / 6;
+  grid-area: 1 / 2 / 4 / 6;
   background-color: blue;
 }
 
 .Ex1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 0.9fr 0.9fr 1.2fr;
@@ -603,7 +606,7 @@ section {
     ". icon1 ."
     ". icon1 ."
     "mtv1 mtv1 mtv1";
-  grid-area: 3 / 6 / 4 / 7;
+  grid-area: 1 / 6 / 2 / 7;
 }
 
 .icon1 {
@@ -620,6 +623,8 @@ section {
 }
 
 .Ex2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
   padding-right: 20px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
@@ -630,7 +635,7 @@ section {
     ". icon2 ."
     ". icon2 ."
     "mtv2 mtv2 mtv2";
-  grid-area: 3 / 7 / 4 / 8;
+  grid-area: 1 / 7 / 2 / 8;
 }
 
 .icon2 {
@@ -647,6 +652,7 @@ section {
 }
 
 .Ex3 {
+  margin: 30px 0px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 0.9fr 0.9fr 1.2fr;
@@ -656,7 +662,7 @@ section {
     ". icon3 ."
     ". icon3 ."
     "mtv3 mtv3 mtv3";
-  grid-area: 4 / 6 / 5 / 7;
+  grid-area: 2 / 6 / 3 / 7;
 }
 
 .icon3 {
@@ -673,7 +679,8 @@ section {
 }
 
 .Ex4 {
-  padding-right: 20px;
+  margin: 30px 0px;
+  margin-right: 20px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 0.9fr 0.9fr 1.2fr;
@@ -683,7 +690,7 @@ section {
     ". icon4 ."
     ". icon4 ."
     "mtv4 mtv4 mtv4";
-  grid-area: 4 / 7 / 5 / 8;
+  grid-area: 2 / 7 / 3 / 8;
 }
 
 .icon4 {
@@ -700,6 +707,8 @@ section {
 }
 
 .Ex5 {
+  margin-top: 30px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 0.9fr 0.9fr 1.2fr;
@@ -709,7 +718,7 @@ section {
     ". icon5 ."
     ". icon5 ."
     "mtv5 mtv5 mtv5";
-  grid-area: 5 / 6 / 6 / 7;
+  grid-area: 3 / 6 / 4 / 7;
 }
 
 .icon5 {
@@ -726,6 +735,8 @@ section {
 }
 
 .Ex6 {
+  margin-top: 30px;
+  margin-bottom: 60px;
   padding-right: 20px;
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
@@ -736,7 +747,7 @@ section {
     ". icon6 ."
     ". icon6 ."
     "mtv6 mtv6 mtv6";
-  grid-area: 5 / 7 / 6 / 8;
+  grid-area: 3 / 7 / 4 / 8;
 }
 
 .icon6 {
