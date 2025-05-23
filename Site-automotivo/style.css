@@ -546,15 +546,15 @@ section {
   }
 }
 
-#bodyFaleConosco { /* aplicado ao body do Home e do Fale Conosco */
+#bodyFaleConosco {
     background-color: #000;
     color: white;
     font-size: 16px;
 }
 
 #sectionFaleConosco {
-  padding: 70px 20px; /* cima, embaixo, dir, esq */
-  padding-top: 102px;
+  /*padding: 70px 20px;*/ /* cima, embaixo, dir, esq */
+  /*padding-top: 102px;*/
   background-image: radial-gradient(#7f3d9e, #6d00d9);
   height: 100%;
   position: relative;
@@ -562,6 +562,8 @@ section {
 }
 
 .containerImgAlugar {
+  max-height: 1480px;
+  min-width: 1100px;
   display: grid;
   grid-template-columns: 0.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
   grid-template-rows: 1fr 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr 1fr;
@@ -578,8 +580,10 @@ section {
 
   & #Int3 {
     width: 100%;
-    max-width: 1850px;
-    height: auto;
+    max-width: auto;
+    min-width: 1100px;
+    max-height: 1080px;
+    min-height: 500px;
   }
 }
 
@@ -748,15 +752,44 @@ section {
   background-color: cadetblue;
 }
 
-  .mtv {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    color: white;
-    background-image: radial-gradient(#7f3d9e, #6d00d9);
-    padding: 18px;
-    font-size: 12px;
-    letter-spacing: 5px;
-    opacity: 70%;
-    border-radius: 15px;
+.mtv {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  background-image: radial-gradient(#7f3d9e, #6d00d9);
+  padding: 18px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  opacity: 70%;
+  border-radius: 15px;
+}
+
+
+/* Estilização da página Aluguel */
+#headerAluguel {
+  position: fixed;  /* Fixa o header no topo da página, mesmo com o scroll da pág */
+  width: 100%;
+  left: 50%;  /* Centraliza o header horizontalmente */
+  transform: translateX(-50%);  /* Compensa o deslocamento do header pra ficar exatamente no meio */
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 100px;
+  z-index: 2;  /* Coloca o header acima de outros elementos da página */
+  padding-top: 20px;
+  background-color: #8600d930;
+  backdrop-filter: blur(10px);  /* Adiciona um efeito de desfoque ao fundo do header */
+  border-bottom: 1px solid #fff;  /* Adiciona uma borda inferior ao header */
+
+  & img {
+      width: 250px;
+      padding-left: 70px;
   }
+
+  & nav {
+      & ul {
+          display: grid;
+          grid-template-columns: repeat(3, 200px);  /* Cria 3 colunas automaticamente de 200px */
+      }
+  }
+}
