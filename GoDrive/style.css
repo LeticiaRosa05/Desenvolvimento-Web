@@ -1,0 +1,38 @@
+header {
+    position: fixed;  /* Fixa o header no topo da página, mesmo com o scroll da pág */
+    width: 100%;
+    left: 50%;  /* Centraliza o header horizontalmente */
+    transform: translateX(-50%);  /* Compensa o deslocamento do header pra ficar exatamente no meio */
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 100px;
+    z-index: 2;  /* Coloca o header acima de outros elementos da página */
+    padding-top: 20px;
+    background-color: #8600d930;
+    backdrop-filter: blur(10px);  /* Adiciona um efeito de desfoque ao fundo do header */
+    border-bottom: 1px solid #fff;  /* Adiciona uma borda inferior ao header */
+
+    & img {
+        width: 250px;
+        padding-left: 70px;
+    }
+
+    & nav {
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);  /* Cria 3 colunas automaticamente de 200px */
+        }
+    }
+}
+
+body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
+
+    & #navS {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    & #navH:hover{
+        color: #beff1b;
+    }
+}
