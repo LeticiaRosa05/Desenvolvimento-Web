@@ -553,8 +553,6 @@ section {
 }
 
 #sectionFaleConosco {
-  /*padding: 70px 20px;*/ /* cima, embaixo, dir, esq */
-  /*padding-top: 102px;*/
   background-image: radial-gradient(#7f3d9e, #6d00d9);
   height: 100%;
   position: relative;
@@ -806,4 +804,13 @@ section {
           grid-template-columns: repeat(3, 200px);  /* Cria 3 colunas automaticamente de 200px */
       }
   }
+}
+
+#sectionAluguel {
+  padding: 70px 20px; /* cima, embaixo, dir, esq */
+  padding-top: 102px;
+  background-image: radial-gradient(#7f3d9e, #6d00d9);
+  height: 100%;
+  position: relative;
+  padding-bottom: 50px;
 }
