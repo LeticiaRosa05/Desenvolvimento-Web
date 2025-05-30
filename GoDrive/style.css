@@ -10,6 +10,15 @@ body, html {
     height: 100%;
 }
 
+section {
+    font-family: Lora;
+    padding: 50px;
+
+    & h1 {
+        font-weight: 500px;
+    }
+}
+
 header {
     position: absolute;  /* Posiciona o header no topo da página, mas ele rola junto com o conteúdo */
     top: 0;
@@ -21,8 +30,8 @@ header {
     gap: 100px;
     z-index: 1;  /* Coloca o header acima de outros elementos da página */
     padding: 20px 0px;
-    backdrop-filter: blur(5px);  /* Adiciona um efeito de desfoque ao fundo do header */
-    border-bottom: 1px solid #000000;  /* Adiciona uma borda inferior ao header */
+    backdrop-filter: blur(5px);  /* Efeito de desfoque no fundo do header */
+    border-bottom: 1px solid #000000;  /* borda inferior do header */
 
     /*& img {
         width: 250px;
@@ -31,13 +40,13 @@ header {
     }*/
 
     #divLogo {
-        font-size: 50px;
+        font-size: 45px;
         padding-left: 70px;
         display: flex;
         font-family: Lora;
     }
 
-    & nav {   
+    & nav {   /* colocar um aparador/linha verde abaixo da página atual, menos na home pq ela não ta na navegação */
          display: flex;
          justify-content: center; /* Centraliza o conteúdo do nav horizontalmente */
          width: 100%;
@@ -49,7 +58,7 @@ header {
     }
 }
 
-body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
+body header nav ul {
 
     & #navS {
         text-decoration: none;
@@ -71,7 +80,6 @@ body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
   text-align: center;
 
   /* estilização do texto na frente da imagem */
-  /*Mustang GT*/
   & .h1_GDH{
     color: white;
     backdrop-filter: blur(8px);
@@ -84,7 +92,6 @@ body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
   }
 }
 
-
 .GDH_paralax {
   position: relative;
   height: 100vh;
@@ -95,7 +102,6 @@ body header nav ul { /* aplicado ao body do Home e do Fale Conosco */
   background-position: center;
   padding-top: 90px;
 }
-
 
 .h1_GDH {
   font-size: 50px;
