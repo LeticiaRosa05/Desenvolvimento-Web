@@ -20,14 +20,13 @@
         </nav>
     </header>
 
-        <div class="GDH_paralax">
+        <div class="GDH_paralax"> <!-- está de fora da section pra ficar com o padding/margin encostando na borda da pg -->
             <div class="paralax">
                 <span class="h1_GDH">GoDrive</span>
             </div>
         </div>
 
         <section>
-
             <div class="container-GD">
                 <div id="sobreGD">
                     <br>
@@ -39,32 +38,34 @@
                     <br><br>
                 </div>
 
-                <div id="scroll_list">
-                    <div class="item">
-                        <img src="img/profissional_icon.png" alt="profissional" class="icon_P">
-                        Profissionalismo
+                <div id="SL_wrap">
+                    <div id="scroll_list">
+                        <div class="item">
+                            <img src="img/profissional_icon.png" alt="profissional" class="icon_P">
+                            Profissionalismo
+                        </div>
+                        <div class="item">
+                            <img src="img/cortesia_icon.png" alt="cortesia" class="icon">
+                            Cortesia
+                        </div>
+                        <div class="item">
+                            <img src="img/seguranca_icon.png" alt="seguranca" class="icon">
+                            Segurança
+                        </div>
+                        <div class="item">
+                            <img src="img/compromisso_icon.png" alt="compromisso" class="icon">
+                            Compromisso
+                        </div>
+                        <div class="item">
+                            <img src="img/pontual_icon.png" alt="pontual" class="icon">
+                            Pontualidade
+                        </div>
+                        <div class="item">
+                            <img src="img/conforto_icon.png" alt="conforto" class="icon">
+                            Conforto
+                        </div>
+                        <script src="scroll.js"></script>
                     </div>
-                    <div class="item">
-                        <img src="img/cortesia_icon.png" alt="cortesia" class="icon">
-                        Cortesia
-                    </div>
-                    <div class="item">
-                        <img src="img/seguranca_icon.png" alt="seguranca" class="icon">
-                        Segurança
-                    </div>
-                    <div class="item">
-                        <img src="img/compromisso_icon.png" alt="compromisso" class="icon">
-                        Compromisso
-                    </div>
-                    <div class="item">
-                        <img src="img/pontual_icon.png" alt="pontual" class="icon">
-                        Pontualidade
-                    </div>
-                    <div class="item">
-                        <img src="img/conforto_icon.png" alt="conforto" class="icon">
-                        Conforto
-                    </div>
-                    <script src="../Teste/teste.js"></script>
                 </div>
             </div>
             <br><br>
@@ -80,8 +81,8 @@
             <br>
             <p>Caso tenha uma necessidade em particular, entre em contato conosco. Queremos te atender da melhor forma.</p>
             <br>
-            <button type="button">Entre em contato</button>
-            <a href="servicos.html">Veja mais sobre nossos serviços</a>
+            <button id="buttonContato" type="button">Entre em contato</button>
+            <a id="vejaMais" class="link" href="servicos.html">Veja mais sobre nossos serviços</a>
             <br><br><br>
             <h1>Localização</h1>
             <br><br>
@@ -94,6 +95,14 @@
 </body>
 <footer>
     <p>©2025 GoDrive. Todos os direitos reservados.</p>
-    <p>Desenvolvido por Letícia Rosa</p>
+    <br>
+    <p>Desenvolvido por Letícia Rosa | <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=leticiasxrosa@gmail.com&su=Contato%20GoDrive&body=Olá,%20gostaria%20de%20mais%20informações." target="_blank">leticiasxrosa@gmail.com</a></p>
+    <br>
+    <a class="link" href="https://web.whatsapp.com/" target="_blank">
+        <button type="button">
+            Fale conosco!
+            <img src="img/wpp_icon.png" alt="wpp_icon">
+        </button>
+    </a>
 </footer>
 </html>
