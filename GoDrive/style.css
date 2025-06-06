@@ -14,7 +14,8 @@ body, html {
 
 section {
     font-family: Lora;
-    padding: 50px;
+    padding: 20px;
+    transition: background-color 0.5s ease;
 
     & h1 {
         font-weight: 500px;
@@ -76,11 +77,12 @@ body header nav ul {
 p, h1 {
     text-align: justify;
     color: #e9e7e7;
+    transition: color 0.5s ease;
 }
 
 .link {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .paralax {
@@ -125,15 +127,36 @@ p, h1 {
   color: #fff;
 }
 
+
+hr {
+  border: 0;
+  height: 5px;
+  background: linear-gradient(125deg, #096300, #14f100); /* Cor da linha */
+  margin: 2px 0 0 0; /* Alinha a linha à esquerda e adiciona margem superior */
+  border-radius: 15px;
+}
+
+#hrSobre {
+width: 184px; /* Largura da linha */
+}
+
+#hrDiferencial {
+width: 198px; /* Largura da linha */
+}
+
+#hrLocalizacao {
+width: 131px; /* Largura da linha */
+}
+
 .container-GD {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 0.9fr 1.1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
   gap: 0px 40px; 
   grid-template-areas: 
-    "sobreGD sobreGD sobreGD sobreGD SL_wrap SL_wrap"
-    "sobreGD sobreGD sobreGD sobreGD SL_wrap SL_wrap"
-    "sobreGD sobreGD sobreGD sobreGD SL_wrap SL_wrap"; 
+    "sobreGD sobreGD sobreGD sobreGD list list"
+    "sobreGD sobreGD sobreGD sobreGD list list"
+    "sobreGD sobreGD sobreGD sobreGD list list"; 
 }
 
 #sobreGD {
@@ -142,75 +165,48 @@ p, h1 {
     max-width: 1500px;
 }
 
-#SL_wrap {
-    grid-area: SL_wrap;
+#list {
+    grid-area: list;
     display: flex;
-    justify-content: flex-end;
-}
-
-/* estilização scroll list */
-#scroll_list {
-    margin-top: 67px;
-    grid-area: scroll_list;
-    width: 100%;
-    max-width: 550px;
-    height: 320px;
-    overflow-y: auto;
-    padding: 5px;
-    background: #2c2c2c;
-    border-radius: 10px;
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-}
-#scroll_list::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-
-.item {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-width: 420px;
-    height: 140px;
-    margin: 10px 0;
-    padding-right: 10px;
-    border-radius: 30px;
-    background: linear-gradient(145deg, #b4b4b4, #ffffff);
-    box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.4),
-                inset 0 -1px 6px rgba(0, 0, 0, 0.2),
-                0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    transform: scale(0.9);
-    /*opacity: 0.6;*/
-    font-family: "Lora", serif;
-    font-size: 35px;
-    font-weight: bold;
+    align-items: left;
+    padding-top: 45px;
 
-    & .icon {
-        width: auto;
-        height: 90px;
-        margin-right: 10px;
-    }
+    & .item {
+        display: flex;
+        align-items: center;
+        color: #2c2c2c;
+        font-weight: bold;
+        padding: 4px 0;
+        min-width: 90px;
+        max-width: 130px;
+        cursor: default;
 
-    & .icon_P {
-        padding-bottom: 12px;
-        padding-right: 10px;
+        & .icon {
+            width: auto;
+            height: 45px;
+            margin-right: 10px;
+        }
     }
+}
+
+.mudaCor {
+    padding-top: 50px;
 }
 
 #buttonContato {
     width: 125px;
     height: 25px;
     border-radius: 9px;
-    color: #7ecd76;
+    color: #3ce02a;
     background-color: black;
 }
 
 #vejaMais {
     margin-left: 15px;
     font-size: 13px;
-    color: #7ecd76;
+    color: #13be04;
 }
 
 #maps {
@@ -229,6 +225,7 @@ footer {
     white-space: normal;
     background-color: #181818;
     padding: 50px 0;
+    margin-top: 50px;
 
     & button {
         display: flex;
