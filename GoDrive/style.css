@@ -89,8 +89,8 @@ p, h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* ajusta a altura do escrito na frente da imagem */
-  width: 100%;
+  transform: translate(-50%, 500%); /* ajusta a altura do escrito na frente da imagem */
+  min-width: 1100px;
   text-align: center;
 
   /* estilização do texto na frente da imagem */
@@ -101,7 +101,7 @@ p, h1 {
     border: 1px solid #000000;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     opacity: 100%;
   }
 }
@@ -150,13 +150,13 @@ width: 131px; /* Largura da linha */
 
 .container-GD {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 0.9fr 1.1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 1.5fr; 
   grid-template-rows: 1fr 1fr 1fr; 
   gap: 0px 40px; 
   grid-template-areas: 
-    "sobreGD sobreGD sobreGD sobreGD list list"
-    "sobreGD sobreGD sobreGD sobreGD list list"
-    "sobreGD sobreGD sobreGD sobreGD list list"; 
+    "sobreGD sobreGD sobreGD sobreGD sobreGD list"
+    "sobreGD sobreGD sobreGD sobreGD sobreGD list"
+    "sobreGD sobreGD sobreGD sobreGD sobreGD list"; 
 }
 
 #sobreGD {
