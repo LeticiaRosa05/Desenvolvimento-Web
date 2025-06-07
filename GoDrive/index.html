@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <section>
+        <section class="section_modal">
             <div class="container-GD">
                 <div id="sobreGD">
                     <br>
@@ -80,7 +80,33 @@
                 <br>
                 <p>Caso tenha uma necessidade em particular, entre em contato conosco. Queremos te atender da melhor forma.</p>
                 <br>
-                <button id="buttonContato" type="button">Entre em contato</button> <!-- detro do formulário, além dele, colocar wpp e email pra contato -->
+                <button id="buttonContato" type="button">Entre em contato</button> <!-- abre um modal -->
+
+                <div id="modalContato" class="modal"> <!-- modal oculto -->
+                    <div id="modal-content" class="section_modal">
+                        <span class="close" id="closeModal">&times;</span>
+                        <h1>Entre em contato</h1><br>
+                        <form>
+                            <label for="nome"><p>Nome:</p></label><br>
+                            <input type="text" id="nome" name="nome" required><br><br>
+                            <label for="email"><p>E-mail:</p></label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+                            <label for="mensagem"><p>Mensagem:</p></label><br>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                            <button id="buttonEnviar" type="submit">Enviar</button>
+                        </form><br>
+                        <hr>
+                        <br>
+                        <div id="contato_modal">
+                            <p>Ou entre em contato por:</p>
+                            <div>
+                                <a class="link_modal" href="https://mail.google.com/mail/?view=cm&fs=1&to=leticiasxrosa@gmail.com&su=Contato%20GoDrive&body=Olá,%20gostaria%20de%20mais%20informações." target="_blank">E-mail</a> |
+                                <a class="link_modal" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <a id="vejaMais" class="link" href="servicos.html">Veja mais sobre nossos serviços</a>
                 <br><br><br>
                 <h1>Localização</h1>
