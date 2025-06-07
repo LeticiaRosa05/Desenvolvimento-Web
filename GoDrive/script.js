@@ -4,20 +4,21 @@ window.addEventListener('scroll', function() {
     parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
 
     const mudaCor = document.querySelector('.mudaCor');
-    const section = document.querySelector('section');
+    const sectionMs = document.querySelectorAll('.section_modal');
     const h1s = document.querySelectorAll('h1');
     const ps = document.querySelectorAll('p');
 
-    if (mudaCor && section) {
+    if (mudaCor && sectionMs.length > 0) {
         const mudaCorTop = mudaCor.getBoundingClientRect().top;
         if (mudaCorTop <= 0) {  // muda as cores quando a tela chega na seção
-            section.style.backgroundColor = '#2c2c2c';
+            sectionMs.forEach(sectionM => sectionM.style.backgroundColor = '#2c2c2c');
             h1s.forEach(h1 => h1.style.color = '#e9e7e7');
             ps.forEach(p => p.style.color = '#e9e7e7');
         } else {
-            section.style.backgroundColor = '#f3f3f3';
+            sectionMs.forEach(sectionM => sectionM.style.backgroundColor = '#f3f3f3');
             h1s.forEach(h1 => h1.style.color = '#2c2c2c');
             ps.forEach(p => p.style.color = '#2c2c2c');
+            
         }
     }
 });
@@ -35,3 +36,17 @@ imagens.forEach(img => {
         img.style.transform = "scale(1)";
     });
 });
+
+document.getElementById('buttonContato').onclick = function() {
+    document.getElementById('modalContato').style.display = 'flex';
+};
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('modalContato').style.display = 'none';
+};
+// Fecha o modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+    var modal = document.getElementById('modalContato');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+};
