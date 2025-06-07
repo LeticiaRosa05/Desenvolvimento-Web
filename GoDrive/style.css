@@ -14,7 +14,7 @@ body, html {
 
 section {
     font-family: Lora;
-    padding: 20px;
+    padding: 50px;
     transition: background-color 0.5s ease;
 
     & h1 {
@@ -201,6 +201,64 @@ width: 131px; /* Largura da linha */
     border-radius: 9px;
     color: #3ce02a;
     background-color: black;
+}
+
+#buttonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    border-radius: 9px;
+    color: #ffffff;
+    background-color: black;
+}
+
+#modalContato {
+    display: none;
+}
+
+#contato_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .link_modal {
+        text-decoration: none;
+        color: #3ce02a;
+        padding: 0 10px;
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.close {
+    position: absolute;
+    right: 15px; top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #vejaMais {
