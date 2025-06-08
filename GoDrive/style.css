@@ -197,6 +197,7 @@ width: 131px; /* Largura da linha */
     border-radius: 9px;
     color: #3ce02a;
     background-color: black;
+    cursor: pointer;
 }
 
 #buttonEnviar {
@@ -208,6 +209,7 @@ width: 131px; /* Largura da linha */
     border-radius: 9px;
     color: #ffffff;
     background-color: black;
+    cursor: pointer;
 }
 
 .borderStyleCSS {
@@ -405,7 +407,11 @@ footer {
     }
 
     & #data {
-        color: #ffffff50;
+        color: #ffffff5d;
+    }
+
+    & #data::-webkit-calendar-picker-indicator {
+        filter: invert(100%) opacity(0.4);
     }
 
     & #mensagem {
