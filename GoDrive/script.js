@@ -27,6 +27,31 @@ window.addEventListener('scroll', function() {
             h1s.forEach(h1 => h1.style.color = '#2c2c2c');
             ps.forEach(p => p.style.color = '#2c2c2c');
         }
+        borderCSS.forEach(bCSS => {
+            bCSS.style.backgroundColor = '#222222';
+            bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.5)';
+            bCSS.addEventListener('mouseover', () => {
+                bCSS.style.backgroundColor = "#17d80544";
+                bCSS.style.color = "#222222";
+            });
+            bCSS.addEventListener('mouseout', () => {
+                if (bCSS.id === 'buttonContato') {
+                    bCSS.style.backgroundColor = "#222222";
+                    bCSS.style.color = "#3ce02a"; // verde
+                } else {
+                    bCSS.style.backgroundColor = "#222222";
+                    bCSS.style.color = "#e9e7e7"; // branco
+                }
+            });            
+            bCSS.addEventListener('click', () => {
+                bCSS.style.transform = "scale(0.85)";
+                bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                setTimeout(() => {
+                    bCSS.style.transform = "scale(1)";
+                    bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.5)';
+                }, 110); /* volta ao normal em 110ms */
+            });
+        });
     }
 
     if (mudaCor && transp.length > 0) {
@@ -46,7 +71,7 @@ window.addEventListener('scroll', function() {
                 });
                 bCSS.addEventListener('click', () => {
                     bCSS.style.transform = "scale(0.80)";
-                    bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.2)';
+                    bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
                     setTimeout(() => {
                         bCSS.style.transform = "scale(1)";
                         bCSS.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.5)';
@@ -85,7 +110,7 @@ document.getElementById('closeModal').onclick = function() {
     document.getElementById('modalContato').style.display = 'none';
 };
 document.getElementById('buttonEnviar').onclick = function() {
-    alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+    /*alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');*/
 };
 
 window.onclick = function(event) {  /* fecha o modal se clicar fora dele */
