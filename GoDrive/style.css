@@ -251,7 +251,7 @@ width: 131px; /* Largura da linha */
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     
     & #nome, #email, #mensagem, #telefone {
-        background-color: #181818;
+        border-radius:5px;
         border-color: #096300;
         height: 30px;
         width: 360px;
@@ -260,7 +260,8 @@ width: 131px; /* Largura da linha */
 
     & #mensagem {
         height: 100px;
-        resize: none; /* Impede o redimensionamento da caixa de mensagem */
+        resize: none;
+        border: 2px solid #096300;
     }
 }
 
@@ -348,13 +349,12 @@ footer {
 }
 
 #bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: auto;
-  object-fit: cover;
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* faz a imagem se adaptar à altura da janela */
+    object-fit: cover;
 }
 
 .sobrepor {
@@ -369,6 +369,9 @@ footer {
 .transparente_Style {
     padding: 50px;
     border-radius: 30px;
+    width: 100%;
+    min-width: 700px;
+    max-width: 1750px;
 }
 
 .formTitle {
@@ -383,9 +386,11 @@ footer {
 
     & #nome, #email, #mensagem, #telefone, #data, #origem, #destino {
         background-color: #181818;
-        border-color: #096300;
+        border-color: #17d805c0;
         height: 50px;
-        width: 360px;
+        width: 100%;
+        min-width: 295px;
+        max-width: 360px;
         padding: 5px;
         border-radius: 10px;
         padding: 0 10px;
@@ -399,7 +404,9 @@ footer {
     & #mensagem {
         padding: 10px;
         height: 100px;
-        width: 740px;
+        width: 100%;
+        min-width: 600px;
+        max-width: 740px;
         resize: none;
         border: 2px solid #096300;
     }
@@ -418,13 +425,12 @@ footer {
     }
 
     & #buttonEnviar {
-        padding: 20px 40px;
+        padding: 20px 45px;
         cursor: pointer;
-    }
-
-    & #buttonEnviar:hover {
-        background-color: #191919;
-        color: #fff;
+        transition: all 0.3s ease;
+        color: #e9e7e7f1;
+        font-weight: bold;
+        font-size: 14px;
     }
 
     & .borderStyle {
@@ -432,6 +438,7 @@ footer {
     }
 
     & .borderStyleCSS {
-        border-style: double;
+        border-style: none;
+        border-radius: 25px;
     }
 }
