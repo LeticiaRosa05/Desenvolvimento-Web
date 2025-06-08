@@ -89,7 +89,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const imagens = document.querySelectorAll('.item');
+const imagens = document.querySelectorAll('.item'); /* zoom na lista de características da empresa, pg index ou home */
 
 imagens.forEach(img => {
     img.style.transition = "transform 0.2s ease";

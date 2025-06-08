@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Inspiração - https://www.evertransfer.com.br/ e https://www.doisipes.com.br/#contato -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,6 @@
 </head>
 <body>
     <header>
-        <!--<img src="img/logo_exc-removedBG.png" alt="logo_exc" class="logo">-->
         <div id="divLogo">GoDrive</div>
         <nav>
             <ul>
@@ -20,111 +19,107 @@
         </nav>
     </header>
 
-        <div class="GDH_paralax"> <!-- está de fora da section pra ficar com o padding/margin encostando na borda da pg -->
-            <div class="paralax">
-                <span class="h1_GDH">Seu destino, nossa direção: transporte com excelência, segurança e confiança.</span>
+    <div class="GDH_paralax"> <!-- está de fora da section pra ficar com o padding/margin encostando na borda da pg -->
+        <div class="paralax">
+            <span class="h1_GDH">Seu destino, nossa direção: transporte com excelência, segurança e confiança.</span>
+        </div>
+    </div>
+
+    <section class="section_modal">
+        <div class="container-GD">
+            <div id="sobreGD">
+                <br>
+                <h1>Sobre a GoDrive</h1>
+                <hr id="hrSobre">
+                <br><br>
+                <p>Somos uma pequena compania de motoristas particulares, localizada na Grande Goiânia. A história da GoDrive tem início com um profissional determinado, dono apenas de seu veículo e em busca de oportunidades no mercado de trabalho. Diante das adversidades, ele optou por atuar como motorista de aplicativo, prestando serviços de transporte urbano com dedicação e profissionalismo. Com o passar do tempo, identificou a possibilidade de oferecer um atendimento mais exclusivo e personalizado aos clientes, diferenciando-se no segmento. Motivado por essa visão, fundou a GoDrive e convidou dois amigos de confiança para integrarem a equipe como motoristas particulares, dando início à operabilidade da empresa. Desde então, a GoDrive tem se destacado pela excelência, segurança e compromisso com a satisfação dos passageiros, consolidando-se como referência no transporte particular da região.</p>
+                <br>
+                <p>A GoDrive tem crescido no setor e expandido os limites de seus serviços, agora realizando viagens interestaduais, escoltas com seguranças privados e serviços mensais agendados. Confira abaixo!</p>
+                <br><br>
+            </div>
+
+            <div id="list">
+                <div class="item">
+                    <img src="img/profissional_icon.png" alt="profissional" class="icon">
+                    Profissionalismo
+                </div>
+                <div class="item">
+                    <img src="img/cortesia_icon.png" alt="cortesia" class="icon">
+                    Cortesia
+                </div>
+                <div class="item">
+                    <img src="img/seguranca_icon.png" alt="seguranca" class="icon">
+                    Segurança
+                </div>
+                <div class="item">
+                    <img src="img/compromisso_icon.png" alt="compromisso" class="icon">
+                    Compromisso
+                </div>
+                <div class="item">
+                    <img src="img/pontual_icon.png" alt="pontual" class="icon">
+                    Pontualidade
+                </div>
+                <div class="item">
+                    <img src="img/conforto_icon.png" alt="conforto" class="icon">
+                    Conforto
+                </div>
             </div>
         </div>
 
-        <section class="section_modal">
-            <div class="container-GD">
-                <div id="sobreGD">
+        <div class="mudaCor">
+            <h1>Nosso diferencial</h1>
+            <hr id="hrDiferencial">
+            <br><br>
+            <p>Caso queira contratar apenas um de nossos motoristas e usar o seu carro, a GoDrive é o lugar certo para você! Oferecemos a contratação exclusiva de um motorista por um orçamento mais acessível, garantindo segurança e flexibilidade para suas necessidades.</p>
+            <br>
+            <p>Além disso, oferecemos viagens para qualquer região do país, proporcionando conforto e tranquilidade em deslocamentos de curta ou longa distância. Com a GoDrive, você conta com motoristas experientes e um atendimento personalizado, tornando cada viagem uma experiência única e segura, seja qual for o seu destino.</p> <!-- na parte da descrição desse serviço na pg de serviços, falar que a estadia do motorista é em parte coberta pela empresa e que o cliente paga uma porcentagem de 10%(além do pagamento mesmo por dia) e dar uma lista de alguns hoteis(nomes inventados) que têm convênio com a GoDrive -->
+            <!-- em localidades que não houverem hoteis com convênio, o cliente paga 20% da estadia do motorista -->
+            <br>
+            <p>A GoDrive também proporciona serviços mensais e agendados, ideais para clientes que necessitam de transporte recorrente, seja para compromissos profissionais, consultas médicas, traslados escolares ou outras demandas específicas. Com flexibilidade de horários e planos personalizados, garantimos pontualidade, comodidade e a confiança de contar sempre com um motorista de dedicado à sua disposição. Nosso objetivo é facilitar o seu dia a dia, oferecendo soluções sob medida para atender às suas necessidades de mobilidade com excelência.</p>
+            <br>
+            <p>Caso tenha uma necessidade em particular, entre em contato conosco. Queremos te atender da melhor forma.</p>
+            <br>
+            <button id="buttonContato" class="borderStyleCSS" type="button">Entre em contato</button> <!-- abre um modal -->
+
+            <div id="modalContato" class="modal"> <!-- modal oculto -->
+                <div id="modal-content" class="section_modal">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h1>Entre em contato</h1><br>
+                    <form>
+                        <label for="nome"><p>Nome:</p></label><br>
+                        <input type="text" id="nome" class="modal_campo" name="nome" required><br><br>
+                        <label for="email"><p>E-mail:</p></label><br>
+                        <input type="email" id="email" class="modal_campo" name="email" required><br><br>
+                        <label for="telefone"><p>Telefone:</p></label><br>
+                        <input type="telefone" id="telefone" class="modal_campo" name="telefone" required><br><br>
+                        <label for="mensagem"><p>Mensagem:</p></label><br>
+                        <textarea id="mensagem" class="modal_campo" name="mensagem" rows="4" required></textarea><br><br>
+                        <button id="buttonEnviar" class="borderStyleCSS" type="submit">Enviar</button>
+                    </form><br>
+                    <hr>
                     <br>
-                    <h1>Sobre a GoDrive</h1>
-                    <hr id="hrSobre">
-                    <br><br>
-                    <p>Somos uma pequena compania de motoristas particulares, localizada na Grande Goiânia. A história da GoDrive tem início com um profissional determinado, dono apenas de seu veículo e em busca de oportunidades no mercado de trabalho. Diante das adversidades, ele optou por atuar como motorista de aplicativo, prestando serviços de transporte urbano com dedicação e profissionalismo. Com o passar do tempo, identificou a possibilidade de oferecer um atendimento mais exclusivo e personalizado aos clientes, diferenciando-se no segmento. Motivado por essa visão, fundou a GoDrive e convidou dois amigos de confiança para integrarem a equipe como motoristas particulares, dando início à operabilidade da empresa. Desde então, a GoDrive tem se destacado pela excelência, segurança e compromisso com a satisfação dos passageiros, consolidando-se como referência no transporte particular da região.</p>
-                    <br>
-                    <p>A GoDrive tem crescido no setor e expandido os limites de seus serviços, agora realizando viagens interestaduais, escoltas com seguranças privados e serviços mensais agendados. Confira abaixo!</p>
-                    <br><br>
-                </div>
-
-                <div id="list">
-                    <div class="item">
-                        <img src="img/profissional_icon.png" alt="profissional" class="icon">
-                        Profissionalismo
-                    </div>
-                    <div class="item">
-                        <img src="img/cortesia_icon.png" alt="cortesia" class="icon">
-                        Cortesia
-                    </div>
-                    <div class="item">
-                        <img src="img/seguranca_icon.png" alt="seguranca" class="icon">
-                        Segurança
-                    </div>
-                    <div class="item">
-                        <img src="img/compromisso_icon.png" alt="compromisso" class="icon">
-                        Compromisso
-                    </div>
-                    <div class="item">
-                        <img src="img/pontual_icon.png" alt="pontual" class="icon">
-                        Pontualidade
-                    </div>
-                    <div class="item">
-                        <img src="img/conforto_icon.png" alt="conforto" class="icon">
-                        Conforto
-                    </div>
-                </div>
-            </div>
-
-            <div class="mudaCor">
-                <h1>Nosso diferencial</h1>
-                <hr id="hrDiferencial">
-                <br><br>
-                <p>Caso queira contratar apenas um de nossos motoristas e usar o seu carro, a GoDrive é o lugar certo para você! Oferecemos a contratação exclusiva de um motorista por um orçamento mais acessível, garantindo segurança e flexibilidade para suas necessidades.</p>
-                <br>
-                <p>Além disso, oferecemos viagens para qualquer região do país, proporcionando conforto e tranquilidade em deslocamentos de curta ou longa distância. Com a GoDrive, você conta com motoristas experientes e um atendimento personalizado, tornando cada viagem uma experiência única e segura, seja qual for o seu destino.</p> <!-- na parte da descrição desse serviço na pg de serviços, falar que a estadia do motorista é em parte coberta pela empresa e que o cliente paga uma porcentagem de 10%(além do pagamento mesmo por dia) e dar uma lista de alguns hoteis(nomes inventados) que têm convênio com a GoDrive -->
-                <!-- em localidades que não houverem hoteis com convênio, o cliente paga 20% da estadia do motorista -->
-                <br>
-                <p>A GoDrive também proporciona serviços mensais e agendados, ideais para clientes que necessitam de transporte recorrente, seja para compromissos profissionais, consultas médicas, traslados escolares ou outras demandas específicas. Com flexibilidade de horários e planos personalizados, garantimos pontualidade, comodidade e a confiança de contar sempre com um motorista de dedicado à sua disposição. Nosso objetivo é facilitar o seu dia a dia, oferecendo soluções sob medida para atender às suas necessidades de mobilidade com excelência.</p>
-                <br>
-                <p>Caso tenha uma necessidade em particular, entre em contato conosco. Queremos te atender da melhor forma.</p>
-                <br>
-                <button id="buttonContato" class="borderStyleCSS" type="button">Entre em contato</button> <!-- abre um modal -->
-
-                <div id="modalContato" class="modal"> <!-- modal oculto -->
-                    <div id="modal-content" class="section_modal">
-                        <span class="close" id="closeModal">&times;</span>
-                        <h1>Entre em contato</h1><br>
-                        <form>
-                            <label for="nome"><p>Nome:</p></label><br>
-                            <input type="text" id="nome" class="modal_campo" name="nome" required><br><br>
-                            <label for="email"><p>E-mail:</p></label><br>
-                            <input type="email" id="email" class="modal_campo" name="email" required><br><br>
-                            <label for="telefone"><p>Telefone:</p></label><br>
-                            <input type="telefone" id="telefone" class="modal_campo" name="telefone" required><br><br>
-                            <!--<label for="origem"><p>Origem:</p></label><br>
-                            <input type="origem" id="origem" class="modal_campo" name="origem"><br><br>
-                            <label for="destino"><p>Destino:</p></label><br>
-                            <input type="destino" id="destino" class="modal_campo" name="destino"><br><br>-->
-                            <label for="mensagem"><p>Mensagem:</p></label><br>
-                            <textarea id="mensagem" class="modal_campo" name="mensagem" rows="4" required></textarea><br><br>
-                            <button id="buttonEnviar" class="borderStyleCSS" type="submit">Enviar</button>
-                        </form><br>
-                        <hr>
-                        <br>
-                        <div id="contato_modal">
-                            <p>Ou entre em contato por:</p>
-                            <div>
-                                <a class="link_modal" href="https://mail.google.com/mail/?view=cm&fs=1&to=leticiasxrosa@gmail.com&su=Contato%20GoDrive&body=Olá,%20gostaria%20de%20mais%20informações." target="_blank">E-mail</a> |
-                                <a class="link_modal" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
-                            </div>
+                    <div id="contato_modal">
+                        <p>Ou entre em contato por:</p>
+                        <div>
+                            <a class="link_modal" href="https://mail.google.com/mail/?view=cm&fs=1&to=leticiasxrosa@gmail.com&su=Contato%20GoDrive&body=Olá,%20gostaria%20de%20mais%20informações." target="_blank">E-mail</a> |
+                            <a class="link_modal" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
                         </div>
                     </div>
                 </div>
-
-                <a id="vejaMais" class="link" href="servicos.html">Veja mais sobre nossos serviços</a>
-                <br><br><br>
-                <h1>Localização</h1>
-                <hr id="hrLocalizacao">
-                <br><br>
-                <p>A sede da GoDrive está localizada no Setor Marista, em Goiânia</p>
-                <br>
-                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24441.75161645949!2d-49.28221687361036!3d-16.701303476425927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef11ba7c0de7f%3A0x44cf685a50c00cdd!2sSt.%20Marista%2C%20Goi%C3%A2nia%20-%20State%20of%20Goi%C3%A1s!5e1!3m2!1sen!2sbr!4v1748901155683!5m2!1sen!2sbr" width="1190" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
-        </section>
-        <script src="script.js"></script>
+
+            <a id="vejaMais" class="link" href="servicos.html">Veja mais sobre nossos serviços</a>
+            <br><br><br>
+            <h1>Localização</h1>
+            <hr id="hrLocalizacao">
+            <br><br>
+            <p>A sede da GoDrive está localizada no Setor Marista, em Goiânia</p>
+            <br>
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24441.75161645949!2d-49.28221687361036!3d-16.701303476425927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef11ba7c0de7f%3A0x44cf685a50c00cdd!2sSt.%20Marista%2C%20Goi%C3%A2nia%20-%20State%20of%20Goi%C3%A1s!5e1!3m2!1sen!2sbr!4v1748901155683!5m2!1sen!2sbr" width="1190" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
 </body>
 <footer>
     <p>©2025 GoDrive. Todos os direitos reservados.</p>
