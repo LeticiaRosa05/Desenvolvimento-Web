@@ -210,6 +210,13 @@ width: 131px; /* Largura da linha */
     background-color: black;
 }
 
+.borderStyleCSS {
+    border-style: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
 #modalContato {
     display: none;
 }
