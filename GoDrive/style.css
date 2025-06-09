@@ -255,6 +255,7 @@ width: 131px; /* Largura da linha */
     border-radius: 8px;
     width: 90%;
     max-width: 400px;
+    min-height: 600px;
     max-height: 650px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -268,7 +269,8 @@ width: 131px; /* Largura da linha */
     }
 
     & #mensagem {
-        height: 100px;
+        min-height: 50px;
+        max-height: 100px;
         resize: none;
         border: 2px solid #096300;
     }
@@ -346,7 +348,7 @@ footer {
 
 .GDnF_paralax {
   position: relative;
-  aspect-ratio: 1920 / 1600;
+  aspect-ratio: 1920 / 1050; /* revisar altura <- <- <- */
   height: auto;
   min-height: 300px;
   background-image: url('img/MP4.jpg');
@@ -402,7 +404,7 @@ frota-container {
 
 .GDF_paralax {
     position: relative;
-    height: 1000px;
+    height: 650px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
