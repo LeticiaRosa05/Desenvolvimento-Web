@@ -18,7 +18,7 @@ window.addEventListener('scroll', function() {
     const h1s = document.querySelectorAll('h1');
     const ps = document.querySelectorAll('p');
 
-    if (mudaCor && sectionMs.length > 0) {
+    if (mudaCor && sectionMs.length > 0) { /* página index */
         const mudaCorTop = mudaCor.getBoundingClientRect().top;
         if (mudaCorTop <= 0) {
             sectionMs.forEach(sectionM => sectionM.style.backgroundColor = '#2c2c2c');
@@ -37,6 +37,7 @@ window.addEventListener('scroll', function() {
             bCSS.addEventListener('mouseover', () => {
                 bCSS.style.backgroundColor = "#17d80544";
                 bCSS.style.color = "#222222";
+                bCSS.style.fontWeight = "bold";
             });
             bCSS.addEventListener('mouseout', () => {
                 if (bCSS.id === 'buttonContato') {
@@ -58,7 +59,7 @@ window.addEventListener('scroll', function() {
         });
     }
 
-    if (mudaCor && transp.length > 0) {
+    if (mudaCor && transp.length > 0) {  /* página faleConosco */
         const transpTop = transp[0].getBoundingClientRect().top;
         if (transpTop <= 500) {
             transp.forEach(t => t.style.backgroundColor = 'rgba(44, 44, 44, 0.88)');
@@ -93,7 +94,8 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const imagens = document.querySelectorAll('.item'); /* zoom na lista de características da empresa, pg index ou home */
+const imagens = document.querySelectorAll('.item'); /* zoom na lista de características da empresa, pg index; carros na pg Nossa frota */
+const carrosE = document.querySelectorAll('.carrosEscala');
 
 imagens.forEach(img => {
     img.style.transition = "transform 0.2s ease";
@@ -104,6 +106,18 @@ imagens.forEach(img => {
 
     img.addEventListener('mouseout', () => {
         img.style.transform = "scale(1)";
+    });
+});
+
+carrosE.forEach(carros => {
+    carros.style.transition = "transform 0.3s ease";
+
+    carros.addEventListener('mouseover', () => {
+        carros.style.transform = "scale(1.15)";
+    });
+
+    carros.addEventListener('mouseout', () => {
+        carros.style.transform = "scale(1)";
     });
 });
 
