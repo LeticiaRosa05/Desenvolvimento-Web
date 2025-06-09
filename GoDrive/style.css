@@ -362,18 +362,33 @@ footer {
 .carrosEscala {
     cursor: pointer;
     width: 100%;
-    max-width: 250px;
-    height: auto;
+    max-width: 190px;
+    max-height: 100px;
+}
+
+.borderFrota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2d79249d;
+    padding-bottom: 15px;
+    width: 250px;
+}
+
+.carroHeight {
+    max-height: 100px;
 }
 
 .descripCenter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
 }
 
 .container_Frota {
+    padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
