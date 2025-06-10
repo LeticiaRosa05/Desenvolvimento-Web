@@ -61,7 +61,7 @@ window.addEventListener('scroll', function() {
 
     if (mudaCor && transp.length > 0) {  /* página faleConosco */
         const transpTop = transp[0].getBoundingClientRect().top;
-        if (transpTop <= 500) {
+        if (transpTop <= 700) {
             transp.forEach(t => t.style.backgroundColor = 'rgba(44, 44, 44, 0.88)');
             campoM.forEach(campoM => campoM.style.backgroundColor = 'rgba(34, 34, 34, 0.95)');
             borderS.forEach(t => t.style.borderColor = '#096300');
