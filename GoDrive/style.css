@@ -359,6 +359,18 @@ footer {
   padding-top: 90px;
 }
 
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .link_F {
+        text-decoration: none;
+        color: #3ce02a;
+        padding: 0 10px;
+    }
+}
+
 .carrosEscala {
     cursor: pointer;
     width: 100%;
@@ -384,10 +396,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
 }
 
 .container_Frota {
+    justify-items: center;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -691,7 +703,7 @@ footer {
 
 .GDF_paralax {
     position: relative;
-    height: 650px;
+    height: 950px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
