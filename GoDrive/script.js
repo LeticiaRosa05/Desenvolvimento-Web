@@ -127,9 +127,6 @@ document.getElementById('buttonContato').onclick = function() {
 document.getElementById('closeModal').onclick = function() {
     document.getElementById('modalContato').style.display = 'none';
 };
-document.getElementById('buttonEnviar').onclick = function() {
-    /*alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');*/
-};
 
 window.onclick = function(event) {  /* fecha o modal se clicar fora dele */
     var modal = document.getElementById('modalContato');

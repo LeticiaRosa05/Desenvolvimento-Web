@@ -37,3 +37,27 @@ container.addEventListener('scroll', () => {
         }
     });
 });
+
+
+
+
+
+
+
+// JS p verificação de campo vazio ou preenchido na pg Fale conosco da GoDrive
+//Caso for usar, colocar na linha 130
+document.getElementById('buttonEnviar').onclick = function() {
+    const campos = document.querySelectorAll('.modal_campo');
+    let preenchido = true;
+    campos.forEach(campo => {
+        if (campo.value.trim()) {
+            preenchido = false;
+        }
+    });
+    if (preenchido) {
+        alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+    } else {
+        alert('Por favor, preencha todos os campos antes de enviar.');
+    }
+    /*alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');*/
+};
