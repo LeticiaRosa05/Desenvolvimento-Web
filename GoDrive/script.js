@@ -94,8 +94,8 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const imagens = document.querySelectorAll('.item'); /* zoom na lista de características da empresa, pg index; carros na pg Nossa frota */
-const carrosE = document.querySelectorAll('.carrosEscala');
+const imagens = document.querySelectorAll('.item'); /* zoom na lista de características da empresa, pg index; serviços na pg serviços */
+const carrosE = document.querySelectorAll('.carrosEscala'); /*  carros na pg Nossa frota */
 
 imagens.forEach(img => {
     img.style.transition = "transform 0.2s ease";
