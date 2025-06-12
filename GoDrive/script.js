@@ -1,12 +1,16 @@
 window.addEventListener('scroll', function() {
     let parallax = document.querySelector('.GDH_paralax');
     let nF_parallax = document.querySelector('.GDnF_paralax');
+    let S_parallax = document.querySelector('.GDS_paralax');
     let scrollPosition = window.pageYOffset;
     if (parallax) {
         parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
     }
     if (nF_parallax) {
         nF_parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
+    }
+    if (S_parallax) {
+        S_parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
     }
 
     const mudaCor = document.querySelector('.mudaCor');
