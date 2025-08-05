@@ -39,7 +39,44 @@ container.addEventListener('scroll', () => {
 });
 
 
+const carousel = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.day-card');
 
+let activeCard = null;
+let activeTimeout = null;
+
+function applySnapActiveByIndex(index) {
+  const targetCard = Array.from(cards).find(
+    card => card.dataset.index === index
+  );
+  
+  if (targetCard && targetCard !== activeCard) {
+    // Remove da anterior
+    if (activeCard) {
+      activeCard.querySelector('.meta')?.classList.remove('snap-active');
+      clearTimeout(activeTimeout);
+    }
+
+    const meta = targetCard.querySelector('.meta');
+    meta.classList.add('snap-active');
+
+    activeTimeout = setTimeout(() => {
+      meta.classList.remove('snap-active');
+      activeCard = null;
+    }, 60000); // Temporizador de 60s
+
+    activeCard = targetCard;
+  }
+}
+
+// Captura de clique no scroll-marker
+carousel.addEventListener('click', (e) => {
+  const marker = e.target.closest('li');
+  if (!marker) return;
+
+  const index = Array.from(carousel.children).indexOf(marker) + 1;
+  applySnapActiveByIndex(index.toString());
+});
 
 
 
