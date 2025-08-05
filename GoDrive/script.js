@@ -1,12 +1,16 @@
 window.addEventListener('scroll', function() {
     let parallax = document.querySelector('.GDH_paralax');
     let nF_parallax = document.querySelector('.GDnF_paralax');
+    let S_parallax = document.querySelector('.GDS_paralax');
     let scrollPosition = window.pageYOffset;
     if (parallax) {
         parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
     }
     if (nF_parallax) {
         nF_parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
+    }
+    if (S_parallax) {
+        S_parallax.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px';
     }
 
     const mudaCor = document.querySelector('.mudaCor');
@@ -61,7 +65,7 @@ window.addEventListener('scroll', function() {
 
     if (mudaCor && transp.length > 0) {  /* página faleConosco */
         const transpTop = transp[0].getBoundingClientRect().top;
-        if (transpTop <= 700) {
+        if (transpTop <= 500) {
             transp.forEach(t => t.style.backgroundColor = 'rgba(44, 44, 44, 0.88)');
             campoM.forEach(campoM => campoM.style.backgroundColor = 'rgba(34, 34, 34, 0.95)');
             borderS.forEach(t => t.style.borderColor = '#096300');
