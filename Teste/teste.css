@@ -324,3 +324,50 @@ img {
         0 0 30px #0ff;
   }
 }
+
+
+/* Estilização da div eventos */
+.div_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  & .evts { /* usado no #eventos */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+      margin-bottom: 10px;
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+#img-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#img-overlay.overlay-ativo {
+  opacity: 1;
+}
+
+.evtsImg.zoom-ativo {
+  z-index: 1000;
+  object-fit: contain;
+}

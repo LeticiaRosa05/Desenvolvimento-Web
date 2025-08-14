@@ -77,3 +77,78 @@ carousel.addEventListener('click', (e) => {
   const index = Array.from(carousel.children).indexOf(marker) + 1;
   applySnapActiveByIndex(index.toString());
 });
+
+
+/* Efeitos da div eventos */
+const eventosImg = document.querySelectorAll('.evtsImg');
+const body = document.body;
+let isZoomed = null;
+
+function removerZoom() {
+    if (!isZoomed) return;
+
+    const overlay = document.getElementById('img-overlay');
+
+    isZoomed.classList.remove('zoom-ativo');
+    isZoomed.style.transform = 'translate(0, 0) scale(1)';
+    isZoomed.style.width = '';
+    isZoomed.style.maxHeight = '';
+
+    if (overlay) {
+        overlay.classList.remove('overlay-ativo');
+        overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+    }
+
+    isZoomed = null;
+    body.style.overflow = ''; // Permite rolagem na página novamente pois a img não está mais com zoom
+}
+
+eventosImg.forEach(evtImg => {
+    evtImg.style.transition = "transform 0.3s ease-in-out";
+
+    evtImg.addEventListener('mouseover', () => {
+        if (isZoomed !== evtImg) {
+            evtImg.style.transform = "scale(1.13)";
+        }
+    });
+    evtImg.addEventListener('mouseout', () => {
+        if (isZoomed !== evtImg) {
+            evtImg.style.transform = "scale(1)";
+        }
+    });
+
+    evtImg.addEventListener('click', () => {
+        if (isZoomed) return;
+        isZoomed = evtImg;
+        
+        const rect = evtImg.getBoundingClientRect(); // Pega as dimensões e posição da imagem
+
+        const viewportCenterX = window.innerWidth / 2; // Calcula o centro da tela (viewport)
+        const viewportCenterY = window.innerHeight / 2;
+
+        const imagemCenterX = rect.left + rect.width / 2; // Calcula o centro da imagem
+        const imagemCenterY = rect.top + rect.height / 2;
+
+        const translateX = viewportCenterX - imagemCenterX; // Calcula a distância que a imagem precisa se mover nos eixos X e Y
+        const translateY = viewportCenterY - imagemCenterY;
+
+        evtImg.style.maxHeight = '20vh'; /* ocasiona erro quando precisa ser usado, zoom extra ao clicar no overlay */
+        evtImg.style.width = 'auto';
+        evtImg.style.height = 'auto';
+        
+        // Aplica a classe para subir o z-index e a transformação para mover a imagem
+        evtImg.classList.add('zoom-ativo');
+        evtImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(4)`;
+        
+        body.style.overflow = 'hidden'; // Impede que a página role enquanto a imagem está com zoom
+
+
+        const overlay = document.createElement('div'); // Cria e exibe o overlay
+        overlay.id = 'img-overlay';
+        body.appendChild(overlay);
+        setTimeout(() => overlay.classList.add('overlay-ativo'), 10);
+
+        overlay.addEventListener('click', removerZoom); // Remoção do zoom com clique no overlay -> ativo
+        /*evtImg.addEventListener('mouseleave', removerZoom);*/ // Remoção do zoom com mouseleave -> inativo
+    });
+});
